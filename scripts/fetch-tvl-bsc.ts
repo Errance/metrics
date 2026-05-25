@@ -15,8 +15,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const CACHE_DIR = join(__dirname, '.cache');
 const OUT_FILE = join(CACHE_DIR, 'tvl-bsc.json');
 
-const RPC = process.env.BSC_RPC ?? 'https://bsc-mainnet.public.blastapi.io';
-const GENESIS = process.env.GENESIS_DATE ?? '2025-10-19';
+const RPC = process.env.BSC_RPC || 'https://bsc-mainnet.public.blastapi.io';
+const GENESIS = process.env.GENESIS_DATE || '2025-10-19';
 
 type Holder = { label: string; addr: string; kind: 'bridge' | 'fireblocks' };
 const HOLDERS: Holder[] = [

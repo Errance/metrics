@@ -24,15 +24,15 @@ const CACHE_DIR = join(__dirname, '.cache');
 const OUT_FILE = join(CACHE_DIR, 'tvl-solana.json');
 
 const RPCS = (
-  process.env.SOLANA_RPCS ??
+  process.env.SOLANA_RPCS ||
   ['https://api.mainnet-beta.solana.com', 'https://solana-rpc.publicnode.com'].join(',')
 )
   .split(',')
   .map((s) => s.trim())
   .filter(Boolean);
 
-const GENESIS = process.env.GENESIS_DATE ?? '2025-10-19';
-const CONCURRENCY = Number(process.env.SOL_CONCURRENCY ?? 10);
+const GENESIS = process.env.GENESIS_DATE || '2025-10-19';
+const CONCURRENCY = Number(process.env.SOL_CONCURRENCY || 10);
 
 type Holder = {
   label: string;
@@ -189,7 +189,7 @@ function renderProgress(force = false): void {
 // Lighter public mirrors (e.g. publicnode) often don't retain enough history
 // to honor `before=<old_sig>` and return [] silently, which would truncate
 // our walk to a single page. mainnet-beta has the deepest history.
-const SIG_RPC = process.env.SOLANA_SIG_RPC ?? 'https://api.mainnet-beta.solana.com';
+const SIG_RPC = process.env.SOLANA_SIG_RPC || 'https://api.mainnet-beta.solana.com';
 
 async function rpcSingle<T>(endpoint: string, method: string, params: unknown[]): Promise<T> {
   let lastErr: unknown;

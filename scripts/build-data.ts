@@ -139,7 +139,7 @@ async function main() {
 
   const bundle = {
     asOf: new Date().toISOString(),
-    genesis: process.env.GENESIS_DATE ?? '2025-10-19',
+    genesis: process.env.GENESIS_DATE || '2025-10-19',
     daily,
     snapshot: snap,
   };

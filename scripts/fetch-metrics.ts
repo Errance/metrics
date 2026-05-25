@@ -13,9 +13,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const CACHE_DIR = join(__dirname, '.cache');
 const OUT_FILE = join(CACHE_DIR, 'metrics.json');
 
-const GENESIS = process.env.GENESIS_DATE ?? '2025-10-19';
+const GENESIS = process.env.GENESIS_DATE || '2025-10-19';
 const API_BASE =
-  process.env.JERRY_API_BASE ?? 'https://surfv2-uat-api.nfexinsider.com';
+  process.env.JERRY_API_BASE || 'https://surfv2-uat-api.nfexinsider.com';
 
 type ApiRow = {
   errno: string;

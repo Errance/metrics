@@ -13,7 +13,7 @@ const CACHE_DIR = join(__dirname, '.cache');
 const OUT_FILE = join(CACHE_DIR, 'snapshot.json');
 
 const API_BASE =
-  process.env.BRIDGE_INFO_BASE ?? 'https://bridge-info.turboflow.xyz';
+  process.env.BRIDGE_INFO_BASE || 'https://bridge-info.turboflow.xyz';
 
 type ApiResp = {
   code: number;
