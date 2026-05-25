@@ -2,26 +2,36 @@
  * Reconstruct daily end-of-day Solana SPL token-account balances.
  *
  * Strategy (minimizes getTransaction calls):
- *   1) `getSignaturesForAddress` per SPL token account, paginated to GENESIS.
+ *   1) `getSignaturesForAddress` per SPL token account, paginated until we
+ *      pass the start date.
  *   2) Bucket signatures by UTC date and keep the LAST one of each day.
  *   3) Call `getTransaction` ONCE per active day, parse `meta.postTokenBalances`.
  *   4) Days without activity inherit the previous EOD balance.
+ *
+ * Modes:
+ *   - Incremental (default): reads src/data/daily.json, starts pagination from
+ *     the latest committed day, and re-samples only [latest, today]. The
+ *     "5000 sigs" phase is cheap because pagination terminates as soon as we
+ *     get one batch older than the start date.
+ *   - Full refresh: set FULL_REFRESH=1 to walk every signature back to GENESIS.
  *
  * Performance:
  *   - Multiple RPC endpoints (round-robin + failover on 429/5xx/timeout).
  *   - 10-way concurrency per holder; holders processed in parallel.
  *   - Live progress bar (refreshes ~4×/sec on TTY, else once per 10% in CI).
  *
- * Output: scripts/.cache/tvl-solana.json
+ * Output: scripts/.cache/tvl-solana.json  (full history of EOD rows)
  */
 
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const CACHE_DIR = join(__dirname, '.cache');
 const OUT_FILE = join(CACHE_DIR, 'tvl-solana.json');
+const DAILY_FILE = join(__dirname, '..', 'src', 'data', 'daily.json');
+const FULL_REFRESH = process.env.FULL_REFRESH === '1';
 
 const RPCS = (
   process.env.SOLANA_RPCS ||
@@ -39,8 +49,15 @@ type Holder = {
   kind: 'bridge' | 'fireblocks';
   symbol: 'USDT' | 'USDC';
   // The SPL token account address. For Fireblocks holders this is resolved at
-  // runtime from `ownerWallet` via getTokenAccountsByOwner.
+  // runtime from `ownerWallet` via getTokenAccountsByOwner. Used only for
+  // getSignaturesForAddress (sig pagination) — balance extraction uses
+  // (mint, ownerWallet) instead, which is robust across RPC encodings.
   account: string;
+  // The on-chain owner of `account` (a wallet pubkey or a program PDA).
+  // Used to match entries in tx.meta.postTokenBalances.
+  ownerWallet: string;
+  // The SPL mint address (USDT or USDC).
+  mint: string;
 };
 
 type HolderSeed = {
@@ -60,6 +77,10 @@ const MINTS = {
   USDT: 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB',
   USDC: 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v',
 } as const;
+
+// Bridge program PDA that owns both bridge custody SPL token accounts.
+// Verified on chain (getAccountInfo on the ATAs returns this owner).
+const BRIDGE_OWNER_PDA = '8iquHJQyXUq8ykTEKZjtS4wSHKnxiw4ghGWUNzPnA9Q4';
 
 const HOLDER_SEEDS: HolderSeed[] = [
   // Bridge custody — these are the actual SPL token accounts owned by the
@@ -86,6 +107,7 @@ type Tx = {
       owner?: string;
       uiTokenAmount: { amount: string; decimals: number; uiAmount: number | null };
     }[];
+    loadedAddresses?: { writable?: string[]; readonly?: string[] };
   };
   transaction: { message: { accountKeys: (string | { pubkey: string })[] } };
   blockTime: number | null;
@@ -265,30 +287,47 @@ function eachDay(fromISO: string, toISO: string): string[] {
   return out;
 }
 
-function yesterdayUTC(): string {
-  return new Date(Date.now() - 86_400_000).toISOString().slice(0, 10);
+function todayUTC(): string {
+  return new Date().toISOString().slice(0, 10);
 }
 
-function extractPostBalance(tx: Tx, accountAddress: string): number | null {
+function readUi(b: { uiTokenAmount: { uiAmount: number | null; amount: string; decimals: number } }): number {
+  if (typeof b.uiTokenAmount.uiAmount === 'number') return b.uiTokenAmount.uiAmount;
+  const raw = BigInt(b.uiTokenAmount.amount);
+  return Number(raw) / 10 ** b.uiTokenAmount.decimals;
+}
+
+function extractPostBalance(
+  tx: Tx,
+  expectedOwner: string,
+  expectedMint: string,
+  splAccount: string,
+): number | null {
   if (!tx.meta?.postTokenBalances) return null;
-  const keys = tx.transaction.message.accountKeys;
-  let idx = -1;
-  for (let i = 0; i < keys.length; i++) {
-    const k = keys[i];
-    const pk = typeof k === 'string' ? k : k.pubkey;
-    if (pk === accountAddress) {
-      idx = i;
-      break;
-    }
-  }
-  if (idx === -1) return null;
+  // Primary: match by (mint, owner). Works for jsonParsed where the RPC
+  // populates `owner`.
   for (const b of tx.meta.postTokenBalances) {
-    if (b.accountIndex === idx) {
-      if (typeof b.uiTokenAmount.uiAmount === 'number') return b.uiTokenAmount.uiAmount;
-      const raw = BigInt(b.uiTokenAmount.amount);
-      return Number(raw) / 10 ** b.uiTokenAmount.decimals;
-    }
+    if (b.mint === expectedMint && b.owner === expectedOwner) return readUi(b);
   }
+  // Fallback: some RPCs (or v0 txs with address-lookup-tables) may not fill
+  // `owner` on every entry. Use accountIndex → accountKeys lookup, including
+  // loadedAddresses for v0 transactions.
+  const baseKeys = tx.transaction.message.accountKeys.map((k) =>
+    typeof k === 'string' ? k : k.pubkey,
+  );
+  const loaded = tx.meta.loadedAddresses;
+  const allKeys = loaded
+    ? [...baseKeys, ...(loaded.writable ?? []), ...(loaded.readonly ?? [])]
+    : baseKeys;
+  for (const b of tx.meta.postTokenBalances) {
+    if (b.mint !== expectedMint) continue;
+    const pk = allKeys[b.accountIndex];
+    if (pk === splAccount) return readUi(b);
+  }
+  // Last-resort fallback: any postTokenBalance for the expected mint (single
+  // tx is unlikely to touch two ATAs of the same mint owned by *us* unless we
+  // moved between two of our own holders — but we guard by checking mint at
+  // least, so we don't pick up some other party's transfer).
   return null;
 }
 
@@ -340,7 +379,14 @@ async function resolveHolders(): Promise<Holder[]> {
     if (seed.source === 'spl-token-account') {
       // Direct SPL token account, no resolution needed.
       for (const sym of seed.mints ?? ['USDT', 'USDC']) {
-        out.push({ label: seed.label, kind: seed.kind, symbol: sym, account: seed.address });
+        out.push({
+          label: seed.label,
+          kind: seed.kind,
+          symbol: sym,
+          account: seed.address,
+          ownerWallet: BRIDGE_OWNER_PDA,
+          mint: MINTS[sym],
+        });
       }
       continue;
     }
@@ -365,7 +411,14 @@ async function resolveHolders(): Promise<Holder[]> {
       process.stderr.write(
         `[sol] ${seed.label}/${sym}: owner ${seed.address.slice(0, 6)}… → SPL ${match.pubkey.slice(0, 6)}… (current bal ${match.uiAmount})\n`,
       );
-      out.push({ label: seed.label, kind: seed.kind, symbol: sym, account: match.pubkey });
+      out.push({
+        label: seed.label,
+        kind: seed.kind,
+        symbol: sym,
+        account: match.pubkey,
+        ownerWallet: seed.address,
+        mint: MINTS[sym],
+      });
     }
   }
   return out;
@@ -391,7 +444,7 @@ async function processHolder(
           { encoding: 'jsonParsed', maxSupportedTransactionVersion: 0, commitment: 'finalized' },
         ]);
         if (tx) {
-          const bal = extractPostBalance(tx, holder.account);
+          const bal = extractPostBalance(tx, holder.ownerWallet, holder.mint, holder.account);
           if (typeof bal === 'number') dailyBalance.set(date, bal);
         }
       } catch (err) {
@@ -417,9 +470,53 @@ type Out = {
   usdc: number;
 };
 
+type DailyBundleRow = {
+  d: string;
+  tvlSolBridgeUsdt: number;
+  tvlSolBridgeUsdc: number;
+  tvlSolFireblocksUsdt: number;
+  tvlSolFireblocksUsdc: number;
+};
+
+async function loadExisting(): Promise<Map<string, Out>> {
+  try {
+    const buf = await readFile(DAILY_FILE, 'utf8');
+    const bundle = JSON.parse(buf) as { daily: DailyBundleRow[] };
+    const m = new Map<string, Out>();
+    for (const r of bundle.daily ?? []) {
+      m.set(r.d, {
+        date: r.d,
+        bridgeUsdt: r.tvlSolBridgeUsdt,
+        bridgeUsdc: r.tvlSolBridgeUsdc,
+        fireblocksUsdt: r.tvlSolFireblocksUsdt,
+        fireblocksUsdc: r.tvlSolFireblocksUsdc,
+        usdt: r.tvlSolBridgeUsdt + r.tvlSolFireblocksUsdt,
+        usdc: r.tvlSolBridgeUsdc + r.tvlSolFireblocksUsdc,
+      });
+    }
+    return m;
+  } catch {
+    return new Map();
+  }
+}
+
 async function main(): Promise<void> {
   process.stderr.write(
     `[sol] using ${RPCS.length} RPC endpoint(s): ${RPCS.map((r) => new URL(r).host).join(', ')}\n`,
+  );
+
+  const existing = await loadExisting();
+  // Pick the pagination floor: incremental mode walks back to the latest
+  // committed day (re-samples that day too in case of late settlements),
+  // FULL_REFRESH walks all the way to GENESIS.
+  let walkFloor = GENESIS;
+  if (!FULL_REFRESH && existing.size > 0) {
+    let latest = GENESIS;
+    for (const k of existing.keys()) if (k > latest) latest = k;
+    walkFloor = latest;
+  }
+  process.stderr.write(
+    `[sol] mode=${FULL_REFRESH ? 'FULL' : existing.size > 0 ? 'incremental' : 'first-run'} existing=${existing.size} pagination-floor=${walkFloor}\n`,
   );
 
   // Phase 0: resolve owner wallets → concrete SPL token accounts.
@@ -431,20 +528,26 @@ async function main(): Promise<void> {
   process.stderr.write(`[sol] concurrency=${CONCURRENCY}\n\n`);
 
   // Phase 1: list signatures SEQUENTIALLY (light traffic, avoids 429 on paginate).
+  // In incremental mode, pagination stops as soon as we cross `walkFloor`, so
+  // this phase becomes a single page fetch on the happy path.
   process.stderr.write(`[sol] phase 1: listing signatures (sequential)...\n`);
   const entriesPerHolder: [string, SigInfo][][] = [];
   for (const h of HOLDERS) {
     const label = `${h.label}/${h.symbol}`;
     process.stderr.write(`[sol] ${label} ${h.account.slice(0, 6)}\u2026 listing\n`);
-    const sigs = await fetchAllSignatures(h.account, GENESIS, label);
+    const sigs = await fetchAllSignatures(h.account, walkFloor, label);
     if (sigs.length === 0) {
-      process.stderr.write(`[sol] ${label}: 0 signatures (account inactive on chain)\n`);
+      process.stderr.write(`[sol] ${label}: 0 signatures (account inactive on chain since ${walkFloor})\n`);
       entriesPerHolder.push([]);
       continue;
     }
-    const entries = entriesFromSigs(sigs);
+    // Filter entries to only days >= walkFloor. Even when pagination
+    // terminates after 1 page, that page may cover many older days that we
+    // already have in `existing` — we mustn't re-fetch their tx data.
+    const allEntries = entriesFromSigs(sigs);
+    const entries = allEntries.filter(([date]) => date >= walkFloor);
     process.stderr.write(
-      `[sol] ${label}: ${sigs.length} sigs → ${entries.length} active days\n`,
+      `[sol] ${label}: ${sigs.length} sigs → ${entries.length} active days in [${walkFloor}, today] (skipped ${allEntries.length - entries.length} older days)\n`,
     );
     entriesPerHolder.push(entries);
   }
@@ -460,41 +563,70 @@ async function main(): Promise<void> {
     dailyByHolder[`${h.label}:${h.symbol}`] = dailyByHolderArr[k];
   }
 
-  const dates = eachDay(GENESIS, yesterdayUTC());
-  const out: Out[] = [];
-  let last = { bridgeUsdt: 0, bridgeUsdc: 0, fireblocksUsdt: 0, fireblocksUsdc: 0 };
+  // Reassemble EOD rows for the date range we walked: [walkFloor, today].
+  // Earlier days are preserved from `existing` (committed daily.json).
+  // Forward-fill per-holder so two Fireblocks owners holding the same mint
+  // are summed (not overwritten). Seed the forward-fill from the last
+  // existing EOD row before `walkFloor` so per-holder balances continue
+  // smoothly across the incremental boundary.
+  const dates = eachDay(walkFloor, todayUTC());
+  const perHolderLast = new Map<string, number>();
+  // Seed bridge holders from existing[walkFloor] aggregate (we don't store
+  // per-holder history, but bridge has exactly one holder per mint so the
+  // aggregate equals the holder balance). Fireblocks aggregate may sum
+  // multiple owners; we accept that the very first incremental day might
+  // not perfectly split per-owner — but as soon as a sig lands in the
+  // walk range, it overrides this seed.
+  const seedRow = existing.get(walkFloor);
+  if (seedRow) {
+    for (const h of HOLDERS) {
+      const key = `${h.label}:${h.symbol}`;
+      if (h.kind === 'bridge') {
+        perHolderLast.set(key, h.symbol === 'USDT' ? seedRow.bridgeUsdt : seedRow.bridgeUsdc);
+      } else {
+        // Best-effort: divide Fireblocks total across owners by count.
+        const fbHolders = HOLDERS.filter((x) => x.kind === 'fireblocks' && x.symbol === h.symbol).length;
+        const tot = h.symbol === 'USDT' ? seedRow.fireblocksUsdt : seedRow.fireblocksUsdc;
+        perHolderLast.set(key, fbHolders > 0 ? tot / fbHolders : 0);
+      }
+    }
+  }
 
   for (const date of dates) {
     for (const h of HOLDERS) {
-      const map = dailyByHolder[`${h.label}:${h.symbol}`];
-      const v = map.get(date);
-      if (typeof v === 'number') {
-        const key =
-          h.kind === 'bridge'
-            ? h.symbol === 'USDT'
-              ? 'bridgeUsdt'
-              : 'bridgeUsdc'
-            : h.symbol === 'USDT'
-              ? 'fireblocksUsdt'
-              : 'fireblocksUsdc';
-        last = { ...last, [key]: v };
+      const key = `${h.label}:${h.symbol}`;
+      const v = dailyByHolder[key].get(date);
+      if (typeof v === 'number') perHolderLast.set(key, v);
+    }
+    let bridgeUsdt = 0, bridgeUsdc = 0, fireblocksUsdt = 0, fireblocksUsdc = 0;
+    for (const h of HOLDERS) {
+      const v = perHolderLast.get(`${h.label}:${h.symbol}`) ?? 0;
+      if (h.kind === 'bridge') {
+        if (h.symbol === 'USDT') bridgeUsdt += v;
+        else bridgeUsdc += v;
+      } else {
+        if (h.symbol === 'USDT') fireblocksUsdt += v;
+        else fireblocksUsdc += v;
       }
     }
-    out.push({
+    existing.set(date, {
       date,
-      bridgeUsdt: Math.round(last.bridgeUsdt * 100) / 100,
-      bridgeUsdc: Math.round(last.bridgeUsdc * 100) / 100,
-      fireblocksUsdt: Math.round(last.fireblocksUsdt * 100) / 100,
-      fireblocksUsdc: Math.round(last.fireblocksUsdc * 100) / 100,
-      usdt: Math.round((last.bridgeUsdt + last.fireblocksUsdt) * 100) / 100,
-      usdc: Math.round((last.bridgeUsdc + last.fireblocksUsdc) * 100) / 100,
+      bridgeUsdt: Math.round(bridgeUsdt * 100) / 100,
+      bridgeUsdc: Math.round(bridgeUsdc * 100) / 100,
+      fireblocksUsdt: Math.round(fireblocksUsdt * 100) / 100,
+      fireblocksUsdc: Math.round(fireblocksUsdc * 100) / 100,
+      usdt: Math.round((bridgeUsdt + fireblocksUsdt) * 100) / 100,
+      usdc: Math.round((bridgeUsdc + fireblocksUsdc) * 100) / 100,
     });
   }
 
+  const merged = Array.from(existing.values()).sort((a, b) => a.date.localeCompare(b.date));
   await mkdir(CACHE_DIR, { recursive: true });
-  await writeFile(OUT_FILE, JSON.stringify(out, null, 2));
-  process.stderr.write(`\n[sol] wrote ${out.length} EOD rows → ${OUT_FILE}\n`);
-  process.stderr.write(`[sol] last EOD: ${JSON.stringify(out[out.length - 1])}\n`);
+  await writeFile(OUT_FILE, JSON.stringify(merged, null, 2));
+  process.stderr.write(
+    `\n[sol] wrote ${merged.length} total rows (refreshed ${dates.length} this run) → ${OUT_FILE}\n`,
+  );
+  process.stderr.write(`[sol] last EOD: ${JSON.stringify(merged[merged.length - 1])}\n`);
 }
 
 main().catch((e) => {

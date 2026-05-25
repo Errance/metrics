@@ -7,3 +7,4 @@ dist/
 .cache/
 .vite/
 scripts/.cache/
+tsconfig.tsbuildinfo

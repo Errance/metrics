@@ -1,22 +1,29 @@
 /*
- * Reconstruct daily end-of-day BSC bridge balances for USDT and USDC by
- * sampling balanceOf(token, bridge) at one block per UTC day. Uses an
+ * Reconstruct daily end-of-day BSC bridge + Fireblocks vault balances for
+ * USDT/USDC by sampling balanceOf at one block per UTC day. Uses an
  * archive-capable public RPC (default: blastapi).
  *
- * Output: scripts/.cache/tvl-bsc.json
- *   { date: 'YYYY-MM-DD', usdt: number, usdc: number }[]  (end-of-day balances)
+ * Modes:
+ *   - Incremental (default): reads src/data/daily.json and only re-samples
+ *     the most recent day onwards (latest committed day re-sampled for
+ *     freshness, plus any new days through today).
+ *   - Full refresh: set FULL_REFRESH=1 to re-sample from GENESIS through today.
+ *
+ * Output: scripts/.cache/tvl-bsc.json  (full history of EOD rows)
  */
 
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const CACHE_DIR = join(__dirname, '.cache');
 const OUT_FILE = join(CACHE_DIR, 'tvl-bsc.json');
+const DAILY_FILE = join(__dirname, '..', 'src', 'data', 'daily.json');
 
 const RPC = process.env.BSC_RPC || 'https://bsc-mainnet.public.blastapi.io';
 const GENESIS = process.env.GENESIS_DATE || '2025-10-19';
+const FULL_REFRESH = process.env.FULL_REFRESH === '1';
 
 type Holder = { label: string; addr: string; kind: 'bridge' | 'fireblocks' };
 const HOLDERS: Holder[] = [
@@ -109,14 +116,69 @@ function scaleBig(raw: bigint, decimals: number): number {
   return parseFloat(`${whole.toString()}.${fracStr}`);
 }
 
+type Out = {
+  date: string;
+  bridgeUsdt: number;
+  bridgeUsdc: number;
+  fireblocksUsdt: number;
+  fireblocksUsdc: number;
+  usdt: number;
+  usdc: number;
+};
+
+type DailyBundleRow = {
+  d: string;
+  tvlBscBridgeUsdt: number;
+  tvlBscBridgeUsdc: number;
+  tvlBscFireblocksUsdt: number;
+  tvlBscFireblocksUsdc: number;
+};
+
+async function loadExisting(): Promise<Map<string, Out>> {
+  try {
+    const buf = await readFile(DAILY_FILE, 'utf8');
+    const bundle = JSON.parse(buf) as { daily: DailyBundleRow[] };
+    const m = new Map<string, Out>();
+    for (const r of bundle.daily ?? []) {
+      m.set(r.d, {
+        date: r.d,
+        bridgeUsdt: r.tvlBscBridgeUsdt,
+        bridgeUsdc: r.tvlBscBridgeUsdc,
+        fireblocksUsdt: r.tvlBscFireblocksUsdt,
+        fireblocksUsdc: r.tvlBscFireblocksUsdc,
+        usdt: r.tvlBscBridgeUsdt + r.tvlBscFireblocksUsdt,
+        usdc: r.tvlBscBridgeUsdc + r.tvlBscFireblocksUsdc,
+      });
+    }
+    return m;
+  } catch {
+    return new Map();
+  }
+}
+
+function pickDatesToSample(existing: Map<string, Out>, until: string): string[] {
+  if (FULL_REFRESH || existing.size === 0) return eachDay(GENESIS, until);
+  // Re-sample the latest committed day (to absorb any forks/reorgs) plus
+  // every day after it through `until`.
+  let latest = GENESIS;
+  for (const k of existing.keys()) if (k > latest) latest = k;
+  return eachDay(latest, until);
+}
+
 async function main() {
   console.log(`[bsc] rpc=${RPC}`);
+  const existing = await loadExisting();
+  const until = todayUTC();
+  const dates = pickDatesToSample(existing, until);
+  console.log(
+    `[bsc] mode=${FULL_REFRESH ? 'FULL' : existing.size > 0 ? 'incremental' : 'first-run'} ` +
+      `existing=${existing.size} sample=${dates.length} (${dates[0]} ... ${dates[dates.length - 1]})`,
+  );
+
   console.log(`[bsc] resolving head block + timestamp`);
   const headBlock = await getBlockNumber();
   const headTs = await getBlockTimestamp(headBlock);
   console.log(`[bsc] head ${headBlock} ts=${new Date(headTs * 1000).toISOString()}`);
-
-  const dates = eachDay(GENESIS, todayUTC());
 
   type Sample = { date: string; block: number; targetTs: number };
   const samples: Sample[] = [];
@@ -134,15 +196,6 @@ async function main() {
     `[bsc] sampling ${samples.length} EOD blocks × ${TOKENS.length} tokens × ${HOLDERS.length} holders = ${samples.length * TOKENS.length * HOLDERS.length} calls`,
   );
 
-  type Out = {
-    date: string;
-    bridgeUsdt: number;
-    bridgeUsdc: number;
-    fireblocksUsdt: number;
-    fireblocksUsdc: number;
-    usdt: number;
-    usdc: number;
-  };
   const result: Out[] = samples.map((s) => ({
     date: s.date,
     bridgeUsdt: 0,
@@ -231,10 +284,17 @@ async function main() {
     }
   }
 
+  // Merge newly-sampled rows into the existing history (preserving committed
+  // days that weren't re-sampled this run).
+  for (const r of result) existing.set(r.date, r);
+  const merged = Array.from(existing.values()).sort((a, b) => a.date.localeCompare(b.date));
+
   await mkdir(CACHE_DIR, { recursive: true });
-  await writeFile(OUT_FILE, JSON.stringify(result, null, 2));
-  console.log(`[bsc] wrote ${result.length} EOD rows → ${OUT_FILE}`);
-  console.log(`[bsc] last EOD: ${JSON.stringify(result[result.length - 1])}`);
+  await writeFile(OUT_FILE, JSON.stringify(merged, null, 2));
+  console.log(
+    `[bsc] wrote ${merged.length} total rows (refreshed ${result.length} this run) → ${OUT_FILE}`,
+  );
+  console.log(`[bsc] last EOD: ${JSON.stringify(merged[merged.length - 1])}`);
 }
 
 main().catch((e) => {

@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-25T02:24:03.499Z",
+  "asOf": "2026-05-25T04:17:24.189Z",
   "genesis": "2025-10-19",
   "daily": [
     {
@@ -13,7 +13,7 @@
       "ff": 0,
       "pf": 0,
       "ef": 0,
-      "tvlBscBridgeUsdt": 38155,
+      "tvlBscBridgeUsdt": 39472.18,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -21,9 +21,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 53008.46,
+      "tvlBridgeOnly": 54325.64,
       "tvlFireblocks": 0,
-      "tvlTotal": 53008.46
+      "tvlTotal": 54325.64
     },
     {
       "d": "2025-10-20",
@@ -36,7 +36,7 @@
       "ff": 0,
       "pf": 0,
       "ef": 0,
-      "tvlBscBridgeUsdt": 41140.05,
+      "tvlBscBridgeUsdt": 42202.41,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -44,9 +44,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 55993.51,
+      "tvlBridgeOnly": 57055.87,
       "tvlFireblocks": 0,
-      "tvlTotal": 55993.51
+      "tvlTotal": 57055.87
     },
     {
       "d": "2025-10-21",
@@ -59,7 +59,7 @@
       "ff": 0.4,
       "pf": 2.03,
       "ef": 0,
-      "tvlBscBridgeUsdt": 44796.49,
+      "tvlBscBridgeUsdt": 44433.49,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -67,9 +67,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 59649.95,
+      "tvlBridgeOnly": 59286.95,
       "tvlFireblocks": 0,
-      "tvlTotal": 59649.95
+      "tvlTotal": 59286.95
     },
     {
       "d": "2025-10-22",
@@ -82,7 +82,7 @@
       "ff": 2.4,
       "pf": 3.44,
       "ef": 0,
-      "tvlBscBridgeUsdt": 46549.67,
+      "tvlBscBridgeUsdt": 46569.51,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -90,9 +90,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 61403.13,
+      "tvlBridgeOnly": 61422.97,
       "tvlFireblocks": 0,
-      "tvlTotal": 61403.13
+      "tvlTotal": 61422.97
     },
     {
       "d": "2025-10-23",
@@ -105,7 +105,7 @@
       "ff": 44.82,
       "pf": 6.9,
       "ef": 0,
-      "tvlBscBridgeUsdt": 47108.18,
+      "tvlBscBridgeUsdt": 47638.44,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -113,9 +113,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 61961.64,
+      "tvlBridgeOnly": 62491.9,
       "tvlFireblocks": 0,
-      "tvlTotal": 61961.64
+      "tvlTotal": 62491.9
     },
     {
       "d": "2025-10-24",
@@ -128,7 +128,7 @@
       "ff": 2.53,
       "pf": 17.68,
       "ef": 0,
-      "tvlBscBridgeUsdt": 50247.19,
+      "tvlBscBridgeUsdt": 50461.57,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -136,9 +136,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 65100.65,
+      "tvlBridgeOnly": 65315.03,
       "tvlFireblocks": 0,
-      "tvlTotal": 65100.65
+      "tvlTotal": 65315.03
     },
     {
       "d": "2025-10-25",
@@ -151,7 +151,7 @@
       "ff": 0,
       "pf": 10.17,
       "ef": 0,
-      "tvlBscBridgeUsdt": 53487.29,
+      "tvlBscBridgeUsdt": 54374.65,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -159,9 +159,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 68340.75,
+      "tvlBridgeOnly": 69228.11,
       "tvlFireblocks": 0,
-      "tvlTotal": 68340.75
+      "tvlTotal": 69228.11
     },
     {
       "d": "2025-10-26",
@@ -174,7 +174,7 @@
       "ff": 0,
       "pf": 59.36,
       "ef": 0,
-      "tvlBscBridgeUsdt": 53286.21,
+      "tvlBscBridgeUsdt": 52235.7,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -182,9 +182,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 68139.67,
+      "tvlBridgeOnly": 67089.16,
       "tvlFireblocks": 0,
-      "tvlTotal": 68139.67
+      "tvlTotal": 67089.16
     },
     {
       "d": "2025-10-27",
@@ -197,7 +197,7 @@
       "ff": 7.28,
       "pf": 226.52,
       "ef": 0,
-      "tvlBscBridgeUsdt": 55461.87,
+      "tvlBscBridgeUsdt": 56531.65,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -205,9 +205,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 70315.33,
+      "tvlBridgeOnly": 71385.11,
       "tvlFireblocks": 0,
-      "tvlTotal": 70315.33
+      "tvlTotal": 71385.11
     },
     {
       "d": "2025-10-28",
@@ -220,7 +220,7 @@
       "ff": 95.25,
       "pf": 716.85,
       "ef": 0,
-      "tvlBscBridgeUsdt": 58639.81,
+      "tvlBscBridgeUsdt": 58745.4,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -228,9 +228,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 73493.27,
+      "tvlBridgeOnly": 73598.86,
       "tvlFireblocks": 0,
-      "tvlTotal": 73493.27
+      "tvlTotal": 73598.86
     },
     {
       "d": "2025-10-29",
@@ -243,7 +243,7 @@
       "ff": 211.96,
       "pf": 451.23,
       "ef": 0,
-      "tvlBscBridgeUsdt": 58948.37,
+      "tvlBscBridgeUsdt": 59198.51,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -251,9 +251,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 73801.83,
+      "tvlBridgeOnly": 74051.97,
       "tvlFireblocks": 0,
-      "tvlTotal": 73801.83
+      "tvlTotal": 74051.97
     },
     {
       "d": "2025-10-30",
@@ -266,7 +266,7 @@
       "ff": 56.74,
       "pf": 140.75,
       "ef": 0,
-      "tvlBscBridgeUsdt": 61460.47,
+      "tvlBscBridgeUsdt": 62541.33,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -274,9 +274,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 76313.93,
+      "tvlBridgeOnly": 77394.79,
       "tvlFireblocks": 0,
-      "tvlTotal": 76313.93
+      "tvlTotal": 77394.79
     },
     {
       "d": "2025-10-31",
@@ -289,7 +289,7 @@
       "ff": 2.34,
       "pf": 140.7,
       "ef": 0,
-      "tvlBscBridgeUsdt": 63302.92,
+      "tvlBscBridgeUsdt": 63167.23,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -297,9 +297,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 78156.38,
+      "tvlBridgeOnly": 78020.69,
       "tvlFireblocks": 0,
-      "tvlTotal": 78156.38
+      "tvlTotal": 78020.69
     },
     {
       "d": "2025-11-01",
@@ -312,7 +312,7 @@
       "ff": 12.24,
       "pf": 99.6,
       "ef": 0,
-      "tvlBscBridgeUsdt": 65998.39,
+      "tvlBscBridgeUsdt": 65978.09,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -320,9 +320,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 80851.85,
+      "tvlBridgeOnly": 80831.55,
       "tvlFireblocks": 0,
-      "tvlTotal": 80851.85
+      "tvlTotal": 80831.55
     },
     {
       "d": "2025-11-02",
@@ -335,7 +335,7 @@
       "ff": 103.54,
       "pf": 187.47,
       "ef": 0,
-      "tvlBscBridgeUsdt": 70362.59,
+      "tvlBscBridgeUsdt": 67293.09,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -343,9 +343,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 85216.05,
+      "tvlBridgeOnly": 82146.55,
       "tvlFireblocks": 0,
-      "tvlTotal": 85216.05
+      "tvlTotal": 82146.55
     },
     {
       "d": "2025-11-03",
@@ -358,7 +358,7 @@
       "ff": 263.64,
       "pf": 371.7,
       "ef": 0,
-      "tvlBscBridgeUsdt": 68787.21,
+      "tvlBscBridgeUsdt": 69119.68,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -366,9 +366,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 83640.67,
+      "tvlBridgeOnly": 83973.14,
       "tvlFireblocks": 0,
-      "tvlTotal": 83640.67
+      "tvlTotal": 83973.14
     },
     {
       "d": "2025-11-04",
@@ -381,7 +381,7 @@
       "ff": 177.45,
       "pf": 272.92,
       "ef": 0,
-      "tvlBscBridgeUsdt": 70058.78,
+      "tvlBscBridgeUsdt": 70194.21,
       "tvlBscBridgeUsdc": 14853.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -389,9 +389,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 84912.24,
+      "tvlBridgeOnly": 85047.67,
       "tvlFireblocks": 0,
-      "tvlTotal": 84912.24
+      "tvlTotal": 85047.67
     },
     {
       "d": "2025-11-05",
@@ -404,17 +404,17 @@
       "ff": 383.16,
       "pf": 401.93,
       "ef": 0,
-      "tvlBscBridgeUsdt": 69874.46,
-      "tvlBscBridgeUsdc": 14853.46,
+      "tvlBscBridgeUsdt": 69596.14,
+      "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 84727.92,
+      "tvlBridgeOnly": 86450.6,
       "tvlFireblocks": 0,
-      "tvlTotal": 84727.92
+      "tvlTotal": 86450.6
     },
     {
       "d": "2025-11-06",
@@ -427,7 +427,7 @@
       "ff": 795.23,
       "pf": 405.91,
       "ef": 0,
-      "tvlBscBridgeUsdt": 70009.7,
+      "tvlBscBridgeUsdt": 72415.84,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -435,9 +435,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 86864.16,
+      "tvlBridgeOnly": 89270.3,
       "tvlFireblocks": 0,
-      "tvlTotal": 86864.16
+      "tvlTotal": 89270.3
     },
     {
       "d": "2025-11-07",
@@ -450,7 +450,7 @@
       "ff": 2154.46,
       "pf": 3786.7,
       "ef": 0,
-      "tvlBscBridgeUsdt": 75054.56,
+      "tvlBscBridgeUsdt": 71110.66,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -458,9 +458,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 91909.02,
+      "tvlBridgeOnly": 87965.12,
       "tvlFireblocks": 0,
-      "tvlTotal": 91909.02
+      "tvlTotal": 87965.12
     },
     {
       "d": "2025-11-08",
@@ -473,7 +473,7 @@
       "ff": 1459.81,
       "pf": 215.73,
       "ef": 0,
-      "tvlBscBridgeUsdt": 77238.99,
+      "tvlBscBridgeUsdt": 77346.15,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -481,9 +481,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 94093.45,
+      "tvlBridgeOnly": 94200.61,
       "tvlFireblocks": 0,
-      "tvlTotal": 94093.45
+      "tvlTotal": 94200.61
     },
     {
       "d": "2025-11-09",
@@ -496,7 +496,7 @@
       "ff": 3163.5,
       "pf": 1354.2,
       "ef": 0,
-      "tvlBscBridgeUsdt": 76208.27,
+      "tvlBscBridgeUsdt": 77031.67,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -504,9 +504,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 93062.73,
+      "tvlBridgeOnly": 93886.13,
       "tvlFireblocks": 0,
-      "tvlTotal": 93062.73
+      "tvlTotal": 93886.13
     },
     {
       "d": "2025-11-10",
@@ -519,7 +519,7 @@
       "ff": 2313.73,
       "pf": 187.81,
       "ef": 0,
-      "tvlBscBridgeUsdt": 77101.77,
+      "tvlBscBridgeUsdt": 78172.27,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -527,9 +527,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 93956.23,
+      "tvlBridgeOnly": 95026.73,
       "tvlFireblocks": 0,
-      "tvlTotal": 93956.23
+      "tvlTotal": 95026.73
     },
     {
       "d": "2025-11-11",
@@ -542,7 +542,7 @@
       "ff": 1904.76,
       "pf": 1040.52,
       "ef": 0,
-      "tvlBscBridgeUsdt": 78658.54,
+      "tvlBscBridgeUsdt": 79099.01,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -550,9 +550,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 95513,
+      "tvlBridgeOnly": 95953.47,
       "tvlFireblocks": 0,
-      "tvlTotal": 95513
+      "tvlTotal": 95953.47
     },
     {
       "d": "2025-11-12",
@@ -565,7 +565,7 @@
       "ff": 3053.27,
       "pf": 336.98,
       "ef": 0,
-      "tvlBscBridgeUsdt": 82591.26,
+      "tvlBscBridgeUsdt": 83236.95,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -573,9 +573,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 99445.72,
+      "tvlBridgeOnly": 100091.41,
       "tvlFireblocks": 0,
-      "tvlTotal": 99445.72
+      "tvlTotal": 100091.41
     },
     {
       "d": "2025-11-13",
@@ -588,7 +588,7 @@
       "ff": 2399.51,
       "pf": 267.69,
       "ef": 0,
-      "tvlBscBridgeUsdt": 77267.36,
+      "tvlBscBridgeUsdt": 79498.1,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -596,9 +596,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 94121.82,
+      "tvlBridgeOnly": 96352.56,
       "tvlFireblocks": 0,
-      "tvlTotal": 94121.82
+      "tvlTotal": 96352.56
     },
     {
       "d": "2025-11-14",
@@ -611,7 +611,7 @@
       "ff": 2459.62,
       "pf": 2904.97,
       "ef": 0,
-      "tvlBscBridgeUsdt": 87247.83,
+      "tvlBscBridgeUsdt": 87326.63,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -619,9 +619,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 104102.29,
+      "tvlBridgeOnly": 104181.09,
       "tvlFireblocks": 0,
-      "tvlTotal": 104102.29
+      "tvlTotal": 104181.09
     },
     {
       "d": "2025-11-15",
@@ -634,7 +634,7 @@
       "ff": 2987.9,
       "pf": 6941.18,
       "ef": 0,
-      "tvlBscBridgeUsdt": 88288.24,
+      "tvlBscBridgeUsdt": 89530.01,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -642,9 +642,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 105142.7,
+      "tvlBridgeOnly": 106384.47,
       "tvlFireblocks": 0,
-      "tvlTotal": 105142.7
+      "tvlTotal": 106384.47
     },
     {
       "d": "2025-11-16",
@@ -657,7 +657,7 @@
       "ff": 2521.83,
       "pf": 932.42,
       "ef": 0,
-      "tvlBscBridgeUsdt": 88257.32,
+      "tvlBscBridgeUsdt": 82316.3,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -665,9 +665,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 105111.78,
+      "tvlBridgeOnly": 99170.76,
       "tvlFireblocks": 0,
-      "tvlTotal": 105111.78
+      "tvlTotal": 99170.76
     },
     {
       "d": "2025-11-17",
@@ -680,7 +680,7 @@
       "ff": 7786.03,
       "pf": 2000.02,
       "ef": 0,
-      "tvlBscBridgeUsdt": 73935.17,
+      "tvlBscBridgeUsdt": 73986.31,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -688,9 +688,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 90789.63,
+      "tvlBridgeOnly": 90840.77,
       "tvlFireblocks": 0,
-      "tvlTotal": 90789.63
+      "tvlTotal": 90840.77
     },
     {
       "d": "2025-11-18",
@@ -703,7 +703,7 @@
       "ff": 8036.48,
       "pf": 2161.95,
       "ef": 0,
-      "tvlBscBridgeUsdt": 71688.7,
+      "tvlBscBridgeUsdt": 70986.13,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -711,9 +711,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 88543.16,
+      "tvlBridgeOnly": 87840.59,
       "tvlFireblocks": 0,
-      "tvlTotal": 88543.16
+      "tvlTotal": 87840.59
     },
     {
       "d": "2025-11-19",
@@ -726,7 +726,7 @@
       "ff": 5677.34,
       "pf": 837.54,
       "ef": 0,
-      "tvlBscBridgeUsdt": 71108.07,
+      "tvlBscBridgeUsdt": 70965.71,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -734,9 +734,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 87962.53,
+      "tvlBridgeOnly": 87820.17,
       "tvlFireblocks": 0,
-      "tvlTotal": 87962.53
+      "tvlTotal": 87820.17
     },
     {
       "d": "2025-11-20",
@@ -749,7 +749,7 @@
       "ff": 3996.81,
       "pf": 1378.61,
       "ef": 0,
-      "tvlBscBridgeUsdt": 76955.57,
+      "tvlBscBridgeUsdt": 84473.96,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -757,9 +757,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 93810.03,
+      "tvlBridgeOnly": 101328.42,
       "tvlFireblocks": 0,
-      "tvlTotal": 93810.03
+      "tvlTotal": 101328.42
     },
     {
       "d": "2025-11-21",
@@ -772,7 +772,7 @@
       "ff": 12426.89,
       "pf": 1979.53,
       "ef": 0,
-      "tvlBscBridgeUsdt": 91842.25,
+      "tvlBscBridgeUsdt": 91839.12,
       "tvlBscBridgeUsdc": 16854.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -780,9 +780,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 108696.71,
+      "tvlBridgeOnly": 108693.58,
       "tvlFireblocks": 0,
-      "tvlTotal": 108696.71
+      "tvlTotal": 108693.58
     },
     {
       "d": "2025-11-22",
@@ -795,7 +795,7 @@
       "ff": 6868.49,
       "pf": 476.3,
       "ef": 0,
-      "tvlBscBridgeUsdt": 90620.15,
+      "tvlBscBridgeUsdt": 88819.79,
       "tvlBscBridgeUsdc": 16805.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -803,9 +803,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 107425.61,
+      "tvlBridgeOnly": 105625.25,
       "tvlFireblocks": 0,
-      "tvlTotal": 107425.61
+      "tvlTotal": 105625.25
     },
     {
       "d": "2025-11-23",
@@ -818,7 +818,7 @@
       "ff": 4059.33,
       "pf": 1147.41,
       "ef": 0,
-      "tvlBscBridgeUsdt": 89158.09,
+      "tvlBscBridgeUsdt": 89321.72,
       "tvlBscBridgeUsdc": 16805.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -826,9 +826,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 105963.55,
+      "tvlBridgeOnly": 106127.18,
       "tvlFireblocks": 0,
-      "tvlTotal": 105963.55
+      "tvlTotal": 106127.18
     },
     {
       "d": "2025-11-24",
@@ -841,7 +841,7 @@
       "ff": 1950.09,
       "pf": 1151.03,
       "ef": 0,
-      "tvlBscBridgeUsdt": 89527.94,
+      "tvlBscBridgeUsdt": 90130.7,
       "tvlBscBridgeUsdc": 16805.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -849,9 +849,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 106333.4,
+      "tvlBridgeOnly": 106936.16,
       "tvlFireblocks": 0,
-      "tvlTotal": 106333.4
+      "tvlTotal": 106936.16
     },
     {
       "d": "2025-11-25",
@@ -864,7 +864,7 @@
       "ff": 1910.17,
       "pf": 3451.21,
       "ef": 0,
-      "tvlBscBridgeUsdt": 91071.85,
+      "tvlBscBridgeUsdt": 92482.48,
       "tvlBscBridgeUsdc": 16805.46,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -872,9 +872,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 107877.31,
+      "tvlBridgeOnly": 109287.94,
       "tvlFireblocks": 0,
-      "tvlTotal": 107877.31
+      "tvlTotal": 109287.94
     },
     {
       "d": "2025-11-26",
@@ -887,7 +887,7 @@
       "ff": 3219.91,
       "pf": 1771.88,
       "ef": 0,
-      "tvlBscBridgeUsdt": 98834.23,
+      "tvlBscBridgeUsdt": 100164.21,
       "tvlBscBridgeUsdc": 16750.9,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -895,9 +895,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 115585.13,
+      "tvlBridgeOnly": 116915.11,
       "tvlFireblocks": 0,
-      "tvlTotal": 115585.13
+      "tvlTotal": 116915.11
     },
     {
       "d": "2025-11-27",
@@ -910,7 +910,7 @@
       "ff": 5784.17,
       "pf": 724.15,
       "ef": 0,
-      "tvlBscBridgeUsdt": 99079.32,
+      "tvlBscBridgeUsdt": 99018.98,
       "tvlBscBridgeUsdc": 16750.9,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -918,9 +918,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 115830.22,
+      "tvlBridgeOnly": 115769.88,
       "tvlFireblocks": 0,
-      "tvlTotal": 115830.22
+      "tvlTotal": 115769.88
     },
     {
       "d": "2025-11-28",
@@ -933,7 +933,7 @@
       "ff": 19894.58,
       "pf": 6333.18,
       "ef": 0,
-      "tvlBscBridgeUsdt": 105199.54,
+      "tvlBscBridgeUsdt": 105408.95,
       "tvlBscBridgeUsdc": 16750.9,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -941,9 +941,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 121950.44,
+      "tvlBridgeOnly": 122159.85,
       "tvlFireblocks": 0,
-      "tvlTotal": 121950.44
+      "tvlTotal": 122159.85
     },
     {
       "d": "2025-11-29",
@@ -956,7 +956,7 @@
       "ff": 4414.53,
       "pf": 1359.17,
       "ef": 0,
-      "tvlBscBridgeUsdt": 108625.81,
+      "tvlBscBridgeUsdt": 109202.15,
       "tvlBscBridgeUsdc": 16750.9,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -964,9 +964,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 125376.71,
+      "tvlBridgeOnly": 125953.05,
       "tvlFireblocks": 0,
-      "tvlTotal": 125376.71
+      "tvlTotal": 125953.05
     },
     {
       "d": "2025-11-30",
@@ -979,7 +979,7 @@
       "ff": 3084.19,
       "pf": 696.99,
       "ef": 0,
-      "tvlBscBridgeUsdt": 107181.81,
+      "tvlBscBridgeUsdt": 107373.86,
       "tvlBscBridgeUsdc": 16750.9,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -987,9 +987,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 123932.71,
+      "tvlBridgeOnly": 124124.76,
       "tvlFireblocks": 0,
-      "tvlTotal": 123932.71
+      "tvlTotal": 124124.76
     },
     {
       "d": "2025-12-01",
@@ -1002,7 +1002,7 @@
       "ff": 7764.49,
       "pf": 1207.55,
       "ef": 0,
-      "tvlBscBridgeUsdt": 109194.59,
+      "tvlBscBridgeUsdt": 107843.68,
       "tvlBscBridgeUsdc": 16750.9,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1010,9 +1010,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 125945.49,
+      "tvlBridgeOnly": 124594.58,
       "tvlFireblocks": 0,
-      "tvlTotal": 125945.49
+      "tvlTotal": 124594.58
     },
     {
       "d": "2025-12-02",
@@ -1025,17 +1025,17 @@
       "ff": 4993.92,
       "pf": 690.58,
       "ef": 0,
-      "tvlBscBridgeUsdt": 107557,
-      "tvlBscBridgeUsdc": 16750.9,
+      "tvlBscBridgeUsdt": 107350.85,
+      "tvlBscBridgeUsdc": 16763.4,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 124307.9,
+      "tvlBridgeOnly": 124114.25,
       "tvlFireblocks": 0,
-      "tvlTotal": 124307.9
+      "tvlTotal": 124114.25
     },
     {
       "d": "2025-12-03",
@@ -1048,7 +1048,7 @@
       "ff": 1959.26,
       "pf": 225.53,
       "ef": 0,
-      "tvlBscBridgeUsdt": 109913.87,
+      "tvlBscBridgeUsdt": 107246.75,
       "tvlBscBridgeUsdc": 16763.4,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1056,9 +1056,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 126677.27,
+      "tvlBridgeOnly": 124010.15,
       "tvlFireblocks": 0,
-      "tvlTotal": 126677.27
+      "tvlTotal": 124010.15
     },
     {
       "d": "2025-12-04",
@@ -1071,7 +1071,7 @@
       "ff": 1571.59,
       "pf": 57.87,
       "ef": 0,
-      "tvlBscBridgeUsdt": 104846.78,
+      "tvlBscBridgeUsdt": 105316.13,
       "tvlBscBridgeUsdc": 16763.4,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1079,9 +1079,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 121610.18,
+      "tvlBridgeOnly": 122079.53,
       "tvlFireblocks": 0,
-      "tvlTotal": 121610.18
+      "tvlTotal": 122079.53
     },
     {
       "d": "2025-12-05",
@@ -1094,7 +1094,7 @@
       "ff": 1904.26,
       "pf": 740.84,
       "ef": 0,
-      "tvlBscBridgeUsdt": 106745.83,
+      "tvlBscBridgeUsdt": 104674.57,
       "tvlBscBridgeUsdc": 16763.4,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1102,9 +1102,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 123509.23,
+      "tvlBridgeOnly": 121437.97,
       "tvlFireblocks": 0,
-      "tvlTotal": 123509.23
+      "tvlTotal": 121437.97
     },
     {
       "d": "2025-12-06",
@@ -1117,7 +1117,7 @@
       "ff": 3099.63,
       "pf": 614.87,
       "ef": 0,
-      "tvlBscBridgeUsdt": 100717.38,
+      "tvlBscBridgeUsdt": 101318.07,
       "tvlBscBridgeUsdc": 16763.4,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1125,9 +1125,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 117480.78,
+      "tvlBridgeOnly": 118081.47,
       "tvlFireblocks": 0,
-      "tvlTotal": 117480.78
+      "tvlTotal": 118081.47
     },
     {
       "d": "2025-12-07",
@@ -1140,7 +1140,7 @@
       "ff": 2499.3,
       "pf": 1376.36,
       "ef": 0,
-      "tvlBscBridgeUsdt": 102842.22,
+      "tvlBscBridgeUsdt": 102994.39,
       "tvlBscBridgeUsdc": 16763.4,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1148,9 +1148,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 119605.62,
+      "tvlBridgeOnly": 119757.79,
       "tvlFireblocks": 0,
-      "tvlTotal": 119605.62
+      "tvlTotal": 119757.79
     },
     {
       "d": "2025-12-08",
@@ -1163,17 +1163,17 @@
       "ff": 2946.16,
       "pf": 1580.83,
       "ef": 0,
-      "tvlBscBridgeUsdt": 103368.65,
-      "tvlBscBridgeUsdc": 16763.4,
+      "tvlBscBridgeUsdt": 107354.14,
+      "tvlBscBridgeUsdc": 16607.49,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 120132.05,
+      "tvlBridgeOnly": 123961.63,
       "tvlFireblocks": 0,
-      "tvlTotal": 120132.05
+      "tvlTotal": 123961.63
     },
     {
       "d": "2025-12-09",
@@ -1186,17 +1186,17 @@
       "ff": 1928.87,
       "pf": 654.26,
       "ef": 0,
-      "tvlBscBridgeUsdt": 108788.18,
-      "tvlBscBridgeUsdc": 16607.49,
+      "tvlBscBridgeUsdt": 107810.59,
+      "tvlBscBridgeUsdc": 16587.49,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 125395.67,
+      "tvlBridgeOnly": 124398.08,
       "tvlFireblocks": 0,
-      "tvlTotal": 125395.67
+      "tvlTotal": 124398.08
     },
     {
       "d": "2025-12-10",
@@ -1209,7 +1209,7 @@
       "ff": 2565.05,
       "pf": 431.92,
       "ef": 0,
-      "tvlBscBridgeUsdt": 107472.46,
+      "tvlBscBridgeUsdt": 109906.39,
       "tvlBscBridgeUsdc": 17515.49,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1217,9 +1217,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 124987.95,
+      "tvlBridgeOnly": 127421.88,
       "tvlFireblocks": 0,
-      "tvlTotal": 124987.95
+      "tvlTotal": 127421.88
     },
     {
       "d": "2025-12-11",
@@ -1232,7 +1232,7 @@
       "ff": 18015.03,
       "pf": 620.66,
       "ef": 0,
-      "tvlBscBridgeUsdt": 111774.89,
+      "tvlBscBridgeUsdt": 110872.94,
       "tvlBscBridgeUsdc": 17565.5,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1240,9 +1240,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 129340.39,
+      "tvlBridgeOnly": 128438.44,
       "tvlFireblocks": 0,
-      "tvlTotal": 129340.39
+      "tvlTotal": 128438.44
     },
     {
       "d": "2025-12-12",
@@ -1255,7 +1255,7 @@
       "ff": 13593.27,
       "pf": 803.07,
       "ef": 0,
-      "tvlBscBridgeUsdt": 107314.17,
+      "tvlBscBridgeUsdt": 107967.01,
       "tvlBscBridgeUsdc": 17565.5,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1263,9 +1263,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 124879.67,
+      "tvlBridgeOnly": 125532.51,
       "tvlFireblocks": 0,
-      "tvlTotal": 124879.67
+      "tvlTotal": 125532.51
     },
     {
       "d": "2025-12-13",
@@ -1278,7 +1278,7 @@
       "ff": 11532.46,
       "pf": 1180.72,
       "ef": 0,
-      "tvlBscBridgeUsdt": 105673.58,
+      "tvlBscBridgeUsdt": 105246.07,
       "tvlBscBridgeUsdc": 17570.44,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1286,9 +1286,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 123244.02,
+      "tvlBridgeOnly": 122816.51,
       "tvlFireblocks": 0,
-      "tvlTotal": 123244.02
+      "tvlTotal": 122816.51
     },
     {
       "d": "2025-12-14",
@@ -1301,7 +1301,7 @@
       "ff": 3221.43,
       "pf": 1000.66,
       "ef": 0,
-      "tvlBscBridgeUsdt": 105794.88,
+      "tvlBscBridgeUsdt": 105905.37,
       "tvlBscBridgeUsdc": 17570.44,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1309,9 +1309,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 123365.32,
+      "tvlBridgeOnly": 123475.81,
       "tvlFireblocks": 0,
-      "tvlTotal": 123365.32
+      "tvlTotal": 123475.81
     },
     {
       "d": "2025-12-15",
@@ -1324,7 +1324,7 @@
       "ff": 14014.7,
       "pf": 3398.47,
       "ef": 0,
-      "tvlBscBridgeUsdt": 104610.88,
+      "tvlBscBridgeUsdt": 103749.02,
       "tvlBscBridgeUsdc": 17570.44,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1332,9 +1332,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 122181.32,
+      "tvlBridgeOnly": 121319.46,
       "tvlFireblocks": 0,
-      "tvlTotal": 122181.32
+      "tvlTotal": 121319.46
     },
     {
       "d": "2025-12-16",
@@ -1347,7 +1347,7 @@
       "ff": 7546.87,
       "pf": 1357,
       "ef": 0,
-      "tvlBscBridgeUsdt": 105237.11,
+      "tvlBscBridgeUsdt": 102455.48,
       "tvlBscBridgeUsdc": 18623.44,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1355,9 +1355,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 123860.55,
+      "tvlBridgeOnly": 121078.92,
       "tvlFireblocks": 0,
-      "tvlTotal": 123860.55
+      "tvlTotal": 121078.92
     },
     {
       "d": "2025-12-17",
@@ -1370,7 +1370,7 @@
       "ff": 8961.44,
       "pf": 340.95,
       "ef": 0,
-      "tvlBscBridgeUsdt": 104692.74,
+      "tvlBscBridgeUsdt": 106110.52,
       "tvlBscBridgeUsdc": 18623.44,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1378,9 +1378,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 123316.18,
+      "tvlBridgeOnly": 124733.96,
       "tvlFireblocks": 0,
-      "tvlTotal": 123316.18
+      "tvlTotal": 124733.96
     },
     {
       "d": "2025-12-18",
@@ -1393,17 +1393,17 @@
       "ff": 2234.13,
       "pf": 379.5,
       "ef": 0,
-      "tvlBscBridgeUsdt": 102722.41,
-      "tvlBscBridgeUsdc": 18623.44,
+      "tvlBscBridgeUsdt": 102149.69,
+      "tvlBscBridgeUsdc": 18503.54,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 121345.85,
+      "tvlBridgeOnly": 120653.23,
       "tvlFireblocks": 0,
-      "tvlTotal": 121345.85
+      "tvlTotal": 120653.23
     },
     {
       "d": "2025-12-19",
@@ -1416,7 +1416,7 @@
       "ff": 3477.48,
       "pf": 336.89,
       "ef": 0,
-      "tvlBscBridgeUsdt": 107038.61,
+      "tvlBscBridgeUsdt": 107481.3,
       "tvlBscBridgeUsdc": 16913.54,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1424,9 +1424,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 123952.15,
+      "tvlBridgeOnly": 124394.84,
       "tvlFireblocks": 0,
-      "tvlTotal": 123952.15
+      "tvlTotal": 124394.84
     },
     {
       "d": "2025-12-20",
@@ -1439,7 +1439,7 @@
       "ff": 1445.29,
       "pf": 325.61,
       "ef": 0,
-      "tvlBscBridgeUsdt": 109248.43,
+      "tvlBscBridgeUsdt": 109158.93,
       "tvlBscBridgeUsdc": 16964.04,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1447,9 +1447,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 126212.47,
+      "tvlBridgeOnly": 126122.97,
       "tvlFireblocks": 0,
-      "tvlTotal": 126212.47
+      "tvlTotal": 126122.97
     },
     {
       "d": "2025-12-21",
@@ -1462,7 +1462,7 @@
       "ff": 1314.01,
       "pf": 323.03,
       "ef": 0,
-      "tvlBscBridgeUsdt": 110925.8,
+      "tvlBscBridgeUsdt": 111206.07,
       "tvlBscBridgeUsdc": 16964.04,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1470,9 +1470,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 127889.84,
+      "tvlBridgeOnly": 128170.11,
       "tvlFireblocks": 0,
-      "tvlTotal": 127889.84
+      "tvlTotal": 128170.11
     },
     {
       "d": "2025-12-22",
@@ -1485,7 +1485,7 @@
       "ff": 1976.25,
       "pf": 174.52,
       "ef": 0,
-      "tvlBscBridgeUsdt": 107388.19,
+      "tvlBscBridgeUsdt": 105206.12,
       "tvlBscBridgeUsdc": 16964.04,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1493,9 +1493,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 124352.23,
+      "tvlBridgeOnly": 122170.16,
       "tvlFireblocks": 0,
-      "tvlTotal": 124352.23
+      "tvlTotal": 122170.16
     },
     {
       "d": "2025-12-23",
@@ -1508,7 +1508,7 @@
       "ff": 1467.63,
       "pf": 244.28,
       "ef": 0,
-      "tvlBscBridgeUsdt": 104483.46,
+      "tvlBscBridgeUsdt": 105604.49,
       "tvlBscBridgeUsdc": 16964.04,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1516,9 +1516,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 121447.5,
+      "tvlBridgeOnly": 122568.53,
       "tvlFireblocks": 0,
-      "tvlTotal": 121447.5
+      "tvlTotal": 122568.53
     },
     {
       "d": "2025-12-24",
@@ -1531,7 +1531,7 @@
       "ff": 2416.32,
       "pf": 818.95,
       "ef": 0,
-      "tvlBscBridgeUsdt": 101364.35,
+      "tvlBscBridgeUsdt": 102296.81,
       "tvlBscBridgeUsdc": 16964.04,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1539,9 +1539,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 118328.39,
+      "tvlBridgeOnly": 119260.85,
       "tvlFireblocks": 0,
-      "tvlTotal": 118328.39
+      "tvlTotal": 119260.85
     },
     {
       "d": "2025-12-25",
@@ -1554,7 +1554,7 @@
       "ff": 2499.4,
       "pf": 489.32,
       "ef": 0,
-      "tvlBscBridgeUsdt": 100655.78,
+      "tvlBscBridgeUsdt": 101631.3,
       "tvlBscBridgeUsdc": 16964.04,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1562,9 +1562,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 117619.82,
+      "tvlBridgeOnly": 118595.34,
       "tvlFireblocks": 0,
-      "tvlTotal": 117619.82
+      "tvlTotal": 118595.34
     },
     {
       "d": "2025-12-26",
@@ -1577,7 +1577,7 @@
       "ff": 3907.34,
       "pf": 572.36,
       "ef": 0,
-      "tvlBscBridgeUsdt": 98388.56,
+      "tvlBscBridgeUsdt": 98658.66,
       "tvlBscBridgeUsdc": 16964.04,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1585,9 +1585,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 115352.6,
+      "tvlBridgeOnly": 115622.7,
       "tvlFireblocks": 0,
-      "tvlTotal": 115352.6
+      "tvlTotal": 115622.7
     },
     {
       "d": "2025-12-27",
@@ -1600,7 +1600,7 @@
       "ff": 4186.76,
       "pf": 1387.31,
       "ef": 0,
-      "tvlBscBridgeUsdt": 98761.25,
+      "tvlBscBridgeUsdt": 97086.03,
       "tvlBscBridgeUsdc": 16964.04,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1608,9 +1608,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 115725.29,
+      "tvlBridgeOnly": 114050.07,
       "tvlFireblocks": 0,
-      "tvlTotal": 115725.29
+      "tvlTotal": 114050.07
     },
     {
       "d": "2025-12-28",
@@ -1623,7 +1623,7 @@
       "ff": 5923.67,
       "pf": 658.31,
       "ef": 0,
-      "tvlBscBridgeUsdt": 96915.04,
+      "tvlBscBridgeUsdt": 97395.62,
       "tvlBscBridgeUsdc": 16964.04,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1631,9 +1631,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 113879.08,
+      "tvlBridgeOnly": 114359.66,
       "tvlFireblocks": 0,
-      "tvlTotal": 113879.08
+      "tvlTotal": 114359.66
     },
     {
       "d": "2025-12-29",
@@ -1646,7 +1646,7 @@
       "ff": 6770.26,
       "pf": 1401.93,
       "ef": 0,
-      "tvlBscBridgeUsdt": 99286.28,
+      "tvlBscBridgeUsdt": 99458.72,
       "tvlBscBridgeUsdc": 16964.04,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1654,9 +1654,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 116250.32,
+      "tvlBridgeOnly": 116422.76,
       "tvlFireblocks": 0,
-      "tvlTotal": 116250.32
+      "tvlTotal": 116422.76
     },
     {
       "d": "2025-12-30",
@@ -1669,7 +1669,7 @@
       "ff": 4945.42,
       "pf": 2135.94,
       "ef": 0,
-      "tvlBscBridgeUsdt": 99122.75,
+      "tvlBscBridgeUsdt": 98563.7,
       "tvlBscBridgeUsdc": 16788.84,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1677,9 +1677,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 115911.59,
+      "tvlBridgeOnly": 115352.54,
       "tvlFireblocks": 0,
-      "tvlTotal": 115911.59
+      "tvlTotal": 115352.54
     },
     {
       "d": "2025-12-31",
@@ -1692,7 +1692,7 @@
       "ff": 2262.29,
       "pf": 940.58,
       "ef": 0,
-      "tvlBscBridgeUsdt": 99526.36,
+      "tvlBscBridgeUsdt": 99352.64,
       "tvlBscBridgeUsdc": 16788.84,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1700,9 +1700,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 116315.2,
+      "tvlBridgeOnly": 116141.48,
       "tvlFireblocks": 0,
-      "tvlTotal": 116315.2
+      "tvlTotal": 116141.48
     },
     {
       "d": "2026-01-01",
@@ -1715,7 +1715,7 @@
       "ff": 3401.62,
       "pf": 2145.87,
       "ef": 0,
-      "tvlBscBridgeUsdt": 97990.09,
+      "tvlBscBridgeUsdt": 98093.01,
       "tvlBscBridgeUsdc": 16788.84,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1723,9 +1723,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 114778.93,
+      "tvlBridgeOnly": 114881.85,
       "tvlFireblocks": 0,
-      "tvlTotal": 114778.93
+      "tvlTotal": 114881.85
     },
     {
       "d": "2026-01-02",
@@ -1738,7 +1738,7 @@
       "ff": 7688.41,
       "pf": 848.61,
       "ef": 0,
-      "tvlBscBridgeUsdt": 97708.47,
+      "tvlBscBridgeUsdt": 97635.84,
       "tvlBscBridgeUsdc": 16788.84,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1746,9 +1746,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 114497.31,
+      "tvlBridgeOnly": 114424.68,
       "tvlFireblocks": 0,
-      "tvlTotal": 114497.31
+      "tvlTotal": 114424.68
     },
     {
       "d": "2026-01-03",
@@ -1761,7 +1761,7 @@
       "ff": 7316.56,
       "pf": 1695.04,
       "ef": 0,
-      "tvlBscBridgeUsdt": 98495.49,
+      "tvlBscBridgeUsdt": 98569.75,
       "tvlBscBridgeUsdc": 16788.84,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1769,9 +1769,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 115284.33,
+      "tvlBridgeOnly": 115358.59,
       "tvlFireblocks": 0,
-      "tvlTotal": 115284.33
+      "tvlTotal": 115358.59
     },
     {
       "d": "2026-01-04",
@@ -1784,17 +1784,17 @@
       "ff": 10743.63,
       "pf": 1313.81,
       "ef": 0,
-      "tvlBscBridgeUsdt": 99516.92,
-      "tvlBscBridgeUsdc": 16788.84,
+      "tvlBscBridgeUsdt": 100153.47,
+      "tvlBscBridgeUsdc": 9786.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 116305.76,
+      "tvlBridgeOnly": 109940.1,
       "tvlFireblocks": 0,
-      "tvlTotal": 116305.76
+      "tvlTotal": 109940.1
     },
     {
       "d": "2026-01-05",
@@ -1807,7 +1807,7 @@
       "ff": 6699.91,
       "pf": 2204.39,
       "ef": 0,
-      "tvlBscBridgeUsdt": 105201.05,
+      "tvlBscBridgeUsdt": 104882.26,
       "tvlBscBridgeUsdc": 9786.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1815,9 +1815,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 114987.68,
+      "tvlBridgeOnly": 114668.89,
       "tvlFireblocks": 0,
-      "tvlTotal": 114987.68
+      "tvlTotal": 114668.89
     },
     {
       "d": "2026-01-06",
@@ -1830,7 +1830,7 @@
       "ff": 6738.04,
       "pf": 2141.99,
       "ef": 0,
-      "tvlBscBridgeUsdt": 104748.71,
+      "tvlBscBridgeUsdt": 105236.18,
       "tvlBscBridgeUsdc": 9786.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1838,9 +1838,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 114535.34,
+      "tvlBridgeOnly": 115022.81,
       "tvlFireblocks": 0,
-      "tvlTotal": 114535.34
+      "tvlTotal": 115022.81
     },
     {
       "d": "2026-01-07",
@@ -1853,7 +1853,7 @@
       "ff": 5667.86,
       "pf": 1444.44,
       "ef": 0,
-      "tvlBscBridgeUsdt": 105548.02,
+      "tvlBscBridgeUsdt": 106392.33,
       "tvlBscBridgeUsdc": 9786.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1861,9 +1861,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 115334.65,
+      "tvlBridgeOnly": 116178.96,
       "tvlFireblocks": 0,
-      "tvlTotal": 115334.65
+      "tvlTotal": 116178.96
     },
     {
       "d": "2026-01-08",
@@ -1876,7 +1876,7 @@
       "ff": 2333.27,
       "pf": 1335,
       "ef": 0,
-      "tvlBscBridgeUsdt": 110156,
+      "tvlBscBridgeUsdt": 108853.84,
       "tvlBscBridgeUsdc": 9786.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1884,9 +1884,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 119942.63,
+      "tvlBridgeOnly": 118640.47,
       "tvlFireblocks": 0,
-      "tvlTotal": 119942.63
+      "tvlTotal": 118640.47
     },
     {
       "d": "2026-01-09",
@@ -1899,7 +1899,7 @@
       "ff": 4620.82,
       "pf": 2692.65,
       "ef": 0,
-      "tvlBscBridgeUsdt": 109147.32,
+      "tvlBscBridgeUsdt": 109177.29,
       "tvlBscBridgeUsdc": 9786.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1907,9 +1907,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 118933.95,
+      "tvlBridgeOnly": 118963.92,
       "tvlFireblocks": 0,
-      "tvlTotal": 118933.95
+      "tvlTotal": 118963.92
     },
     {
       "d": "2026-01-10",
@@ -1922,7 +1922,7 @@
       "ff": 3168.31,
       "pf": 899.04,
       "ef": 0,
-      "tvlBscBridgeUsdt": 109492.6,
+      "tvlBscBridgeUsdt": 110297.3,
       "tvlBscBridgeUsdc": 9786.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1930,9 +1930,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 119279.23,
+      "tvlBridgeOnly": 120083.93,
       "tvlFireblocks": 0,
-      "tvlTotal": 119279.23
+      "tvlTotal": 120083.93
     },
     {
       "d": "2026-01-11",
@@ -1945,7 +1945,7 @@
       "ff": 1790.58,
       "pf": 359.99,
       "ef": 0,
-      "tvlBscBridgeUsdt": 110459.42,
+      "tvlBscBridgeUsdt": 109664.65,
       "tvlBscBridgeUsdc": 9786.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1953,9 +1953,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 120246.05,
+      "tvlBridgeOnly": 119451.28,
       "tvlFireblocks": 0,
-      "tvlTotal": 120246.05
+      "tvlTotal": 119451.28
     },
     {
       "d": "2026-01-12",
@@ -1968,7 +1968,7 @@
       "ff": 4001.24,
       "pf": 1018.66,
       "ef": 0,
-      "tvlBscBridgeUsdt": 111658.98,
+      "tvlBscBridgeUsdt": 112745.99,
       "tvlBscBridgeUsdc": 9786.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1976,9 +1976,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 121445.61,
+      "tvlBridgeOnly": 122532.62,
       "tvlFireblocks": 0,
-      "tvlTotal": 121445.61
+      "tvlTotal": 122532.62
     },
     {
       "d": "2026-01-13",
@@ -1991,7 +1991,7 @@
       "ff": 2131.86,
       "pf": 1406.31,
       "ef": 0,
-      "tvlBscBridgeUsdt": 115778.62,
+      "tvlBscBridgeUsdt": 115831.74,
       "tvlBscBridgeUsdc": 9786.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -1999,9 +1999,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 125565.25,
+      "tvlBridgeOnly": 125618.37,
       "tvlFireblocks": 0,
-      "tvlTotal": 125565.25
+      "tvlTotal": 125618.37
     },
     {
       "d": "2026-01-14",
@@ -2014,7 +2014,7 @@
       "ff": 2463.53,
       "pf": 1704.82,
       "ef": 0,
-      "tvlBscBridgeUsdt": 116626.16,
+      "tvlBscBridgeUsdt": 116580.21,
       "tvlBscBridgeUsdc": 9786.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -2022,9 +2022,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 126412.79,
+      "tvlBridgeOnly": 126366.84,
       "tvlFireblocks": 0,
-      "tvlTotal": 126412.79
+      "tvlTotal": 126366.84
     },
     {
       "d": "2026-01-15",
@@ -2037,7 +2037,7 @@
       "ff": 3832.95,
       "pf": 2195.15,
       "ef": 0,
-      "tvlBscBridgeUsdt": 118935.07,
+      "tvlBscBridgeUsdt": 119057.59,
       "tvlBscBridgeUsdc": 9786.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -2045,9 +2045,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 128721.7,
+      "tvlBridgeOnly": 128844.22,
       "tvlFireblocks": 0,
-      "tvlTotal": 128721.7
+      "tvlTotal": 128844.22
     },
     {
       "d": "2026-01-16",
@@ -2083,7 +2083,7 @@
       "ff": 5089.93,
       "pf": 741.55,
       "ef": 0,
-      "tvlBscBridgeUsdt": 121353.77,
+      "tvlBscBridgeUsdt": 121280.84,
       "tvlBscBridgeUsdc": 9769.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -2091,9 +2091,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 131123.4,
+      "tvlBridgeOnly": 131050.47,
       "tvlFireblocks": 0,
-      "tvlTotal": 131123.4
+      "tvlTotal": 131050.47
     },
     {
       "d": "2026-01-18",
@@ -2106,7 +2106,7 @@
       "ff": 6378.15,
       "pf": 1419.83,
       "ef": 0,
-      "tvlBscBridgeUsdt": 116900.16,
+      "tvlBscBridgeUsdt": 116092.05,
       "tvlBscBridgeUsdc": 9769.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
@@ -2114,9 +2114,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 126669.79,
+      "tvlBridgeOnly": 125861.68,
       "tvlFireblocks": 0,
-      "tvlTotal": 126669.79
+      "tvlTotal": 125861.68
     },
     {
       "d": "2026-01-19",
@@ -2129,17 +2129,17 @@
       "ff": 9802.91,
       "pf": 1233.68,
       "ef": 0,
-      "tvlBscBridgeUsdt": 113764.94,
-      "tvlBscBridgeUsdc": 9769.63,
+      "tvlBscBridgeUsdt": 113894.66,
+      "tvlBscBridgeUsdc": 11874.63,
       "tvlBscFireblocksUsdt": 0,
       "tvlBscFireblocksUsdc": 0,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 123534.57,
+      "tvlBridgeOnly": 125769.29,
       "tvlFireblocks": 0,
-      "tvlTotal": 123534.57
+      "tvlTotal": 125769.29
     },
     {
       "d": "2026-01-20",
@@ -2152,7 +2152,7 @@
       "ff": 10662.17,
       "pf": 1436.43,
       "ef": 0,
-      "tvlBscBridgeUsdt": 114484.12,
+      "tvlBscBridgeUsdt": 116861.92,
       "tvlBscBridgeUsdc": 11874.63,
       "tvlBscFireblocksUsdt": 200,
       "tvlBscFireblocksUsdc": 0,
@@ -2160,9 +2160,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 126358.75,
+      "tvlBridgeOnly": 128736.55,
       "tvlFireblocks": 200,
-      "tvlTotal": 126558.75
+      "tvlTotal": 128936.55
     },
     {
       "d": "2026-01-21",
@@ -2175,7 +2175,7 @@
       "ff": 11835.55,
       "pf": 1074.36,
       "ef": 0,
-      "tvlBscBridgeUsdt": 118803.91,
+      "tvlBscBridgeUsdt": 119242.32,
       "tvlBscBridgeUsdc": 12572.63,
       "tvlBscFireblocksUsdt": 200,
       "tvlBscFireblocksUsdc": 0,
@@ -2183,9 +2183,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 131376.54,
+      "tvlBridgeOnly": 131814.95,
       "tvlFireblocks": 200,
-      "tvlTotal": 131576.54
+      "tvlTotal": 132014.95
     },
     {
       "d": "2026-01-22",
@@ -2198,7 +2198,7 @@
       "ff": 5740.2,
       "pf": 2351.6,
       "ef": 0,
-      "tvlBscBridgeUsdt": 119178.53,
+      "tvlBscBridgeUsdt": 118128.39,
       "tvlBscBridgeUsdc": 12572.63,
       "tvlBscFireblocksUsdt": 200,
       "tvlBscFireblocksUsdc": 0,
@@ -2206,9 +2206,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 131751.16,
+      "tvlBridgeOnly": 130701.02,
       "tvlFireblocks": 200,
-      "tvlTotal": 131951.16
+      "tvlTotal": 130901.02
     },
     {
       "d": "2026-01-23",
@@ -2221,7 +2221,7 @@
       "ff": 8724.1,
       "pf": 1357.31,
       "ef": 0,
-      "tvlBscBridgeUsdt": 120477.43,
+      "tvlBscBridgeUsdt": 120428.43,
       "tvlBscBridgeUsdc": 12572.63,
       "tvlBscFireblocksUsdt": 200,
       "tvlBscFireblocksUsdc": 0,
@@ -2229,9 +2229,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 133050.06,
+      "tvlBridgeOnly": 133001.06,
       "tvlFireblocks": 200,
-      "tvlTotal": 133250.06
+      "tvlTotal": 133201.06
     },
     {
       "d": "2026-01-24",
@@ -2244,7 +2244,7 @@
       "ff": 3007.31,
       "pf": 1250.05,
       "ef": 0,
-      "tvlBscBridgeUsdt": 122842.95,
+      "tvlBscBridgeUsdt": 123235.63,
       "tvlBscBridgeUsdc": 12572.63,
       "tvlBscFireblocksUsdt": 200,
       "tvlBscFireblocksUsdc": 0,
@@ -2252,9 +2252,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 135415.58,
+      "tvlBridgeOnly": 135808.26,
       "tvlFireblocks": 200,
-      "tvlTotal": 135615.58
+      "tvlTotal": 136008.26
     },
     {
       "d": "2026-01-25",
@@ -2267,7 +2267,7 @@
       "ff": 2751.21,
       "pf": 604.03,
       "ef": 0,
-      "tvlBscBridgeUsdt": 123743.19,
+      "tvlBscBridgeUsdt": 121298.59,
       "tvlBscBridgeUsdc": 12423.98,
       "tvlBscFireblocksUsdt": 200,
       "tvlBscFireblocksUsdc": 0,
@@ -2275,9 +2275,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 136167.17,
+      "tvlBridgeOnly": 133722.57,
       "tvlFireblocks": 200,
-      "tvlTotal": 136367.17
+      "tvlTotal": 133922.57
     },
     {
       "d": "2026-01-26",
@@ -2290,7 +2290,7 @@
       "ff": 8370.54,
       "pf": 900.4,
       "ef": 0,
-      "tvlBscBridgeUsdt": 124622.77,
+      "tvlBscBridgeUsdt": 124872.5,
       "tvlBscBridgeUsdc": 12423.98,
       "tvlBscFireblocksUsdt": 300,
       "tvlBscFireblocksUsdc": 0,
@@ -2298,9 +2298,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 137046.75,
+      "tvlBridgeOnly": 137296.48,
       "tvlFireblocks": 300,
-      "tvlTotal": 137346.75
+      "tvlTotal": 137596.48
     },
     {
       "d": "2026-01-27",
@@ -2313,7 +2313,7 @@
       "ff": 4834.17,
       "pf": 440.33,
       "ef": 0,
-      "tvlBscBridgeUsdt": 128841.92,
+      "tvlBscBridgeUsdt": 130012.86,
       "tvlBscBridgeUsdc": 12423.98,
       "tvlBscFireblocksUsdt": 300,
       "tvlBscFireblocksUsdc": 0,
@@ -2321,9 +2321,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 141265.9,
+      "tvlBridgeOnly": 142436.84,
       "tvlFireblocks": 300,
-      "tvlTotal": 141565.9
+      "tvlTotal": 142736.84
     },
     {
       "d": "2026-01-28",
@@ -2336,7 +2336,7 @@
       "ff": 10557.57,
       "pf": 756.54,
       "ef": 0,
-      "tvlBscBridgeUsdt": 129402.99,
+      "tvlBscBridgeUsdt": 130325.64,
       "tvlBscBridgeUsdc": 12536.44,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2344,9 +2344,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 141939.43,
+      "tvlBridgeOnly": 142862.08,
       "tvlFireblocks": 500400,
-      "tvlTotal": 642339.43
+      "tvlTotal": 643262.08
     },
     {
       "d": "2026-01-29",
@@ -2359,7 +2359,7 @@
       "ff": 20953.06,
       "pf": 389.65,
       "ef": 0,
-      "tvlBscBridgeUsdt": 130512.3,
+      "tvlBscBridgeUsdt": 130587.66,
       "tvlBscBridgeUsdc": 12536.44,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2367,9 +2367,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 143048.74,
+      "tvlBridgeOnly": 143124.1,
       "tvlFireblocks": 500400,
-      "tvlTotal": 643448.74
+      "tvlTotal": 643524.1
     },
     {
       "d": "2026-01-30",
@@ -2382,7 +2382,7 @@
       "ff": 50140.7,
       "pf": 859.16,
       "ef": 0,
-      "tvlBscBridgeUsdt": 130354.1,
+      "tvlBscBridgeUsdt": 130611.97,
       "tvlBscBridgeUsdc": 12536.44,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2390,9 +2390,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 142890.54,
+      "tvlBridgeOnly": 143148.41,
       "tvlFireblocks": 500400,
-      "tvlTotal": 643290.54
+      "tvlTotal": 643548.41
     },
     {
       "d": "2026-01-31",
@@ -2405,7 +2405,7 @@
       "ff": 10297.02,
       "pf": 670.32,
       "ef": 0,
-      "tvlBscBridgeUsdt": 129826.57,
+      "tvlBscBridgeUsdt": 129733.41,
       "tvlBscBridgeUsdc": 12536.44,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2413,9 +2413,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 142363.01,
+      "tvlBridgeOnly": 142269.85,
       "tvlFireblocks": 500400,
-      "tvlTotal": 642763.01
+      "tvlTotal": 642669.85
     },
     {
       "d": "2026-02-01",
@@ -2428,7 +2428,7 @@
       "ff": 7433.76,
       "pf": 838.28,
       "ef": 0,
-      "tvlBscBridgeUsdt": 125599.05,
+      "tvlBscBridgeUsdt": 127774.53,
       "tvlBscBridgeUsdc": 13564.44,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2436,9 +2436,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 139163.49,
+      "tvlBridgeOnly": 141338.97,
       "tvlFireblocks": 500400,
-      "tvlTotal": 639563.49
+      "tvlTotal": 641738.97
     },
     {
       "d": "2026-02-02",
@@ -2451,7 +2451,7 @@
       "ff": 5437.92,
       "pf": 633.55,
       "ef": 0,
-      "tvlBscBridgeUsdt": 128911.25,
+      "tvlBscBridgeUsdt": 130549.27,
       "tvlBscBridgeUsdc": 13564.44,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2459,9 +2459,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 142475.69,
+      "tvlBridgeOnly": 144113.71,
       "tvlFireblocks": 500400,
-      "tvlTotal": 642875.69
+      "tvlTotal": 644513.71
     },
     {
       "d": "2026-02-03",
@@ -2474,7 +2474,7 @@
       "ff": 5978.39,
       "pf": 407.47,
       "ef": 0,
-      "tvlBscBridgeUsdt": 129387.33,
+      "tvlBscBridgeUsdt": 131091.51,
       "tvlBscBridgeUsdc": 13564.44,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2482,9 +2482,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 142951.77,
+      "tvlBridgeOnly": 144655.95,
       "tvlFireblocks": 500400,
-      "tvlTotal": 643351.77
+      "tvlTotal": 645055.95
     },
     {
       "d": "2026-02-04",
@@ -2497,7 +2497,7 @@
       "ff": 9892.7,
       "pf": 545.9,
       "ef": 0,
-      "tvlBscBridgeUsdt": 140681.15,
+      "tvlBscBridgeUsdt": 141411.03,
       "tvlBscBridgeUsdc": 13564.44,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2505,9 +2505,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 154245.59,
+      "tvlBridgeOnly": 154975.47,
       "tvlFireblocks": 500400,
-      "tvlTotal": 654645.59
+      "tvlTotal": 655375.47
     },
     {
       "d": "2026-02-05",
@@ -2520,7 +2520,7 @@
       "ff": 20520.52,
       "pf": 623.32,
       "ef": 0,
-      "tvlBscBridgeUsdt": 137046.62,
+      "tvlBscBridgeUsdt": 137075.62,
       "tvlBscBridgeUsdc": 13564.44,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2528,9 +2528,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 150611.06,
+      "tvlBridgeOnly": 150640.06,
       "tvlFireblocks": 500400,
-      "tvlTotal": 651011.06
+      "tvlTotal": 651040.06
     },
     {
       "d": "2026-02-06",
@@ -2543,7 +2543,7 @@
       "ff": 24681.07,
       "pf": 644.19,
       "ef": 0,
-      "tvlBscBridgeUsdt": 136638.05,
+      "tvlBscBridgeUsdt": 136950.34,
       "tvlBscBridgeUsdc": 13564.44,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2551,9 +2551,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 150202.49,
+      "tvlBridgeOnly": 150514.78,
       "tvlFireblocks": 500400,
-      "tvlTotal": 650602.49
+      "tvlTotal": 650914.78
     },
     {
       "d": "2026-02-07",
@@ -2566,7 +2566,7 @@
       "ff": 15199.38,
       "pf": 524.38,
       "ef": 0,
-      "tvlBscBridgeUsdt": 138254.75,
+      "tvlBscBridgeUsdt": 137925.03,
       "tvlBscBridgeUsdc": 12331.96,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2574,9 +2574,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 150586.71,
+      "tvlBridgeOnly": 150256.99,
       "tvlFireblocks": 500400,
-      "tvlTotal": 650986.71
+      "tvlTotal": 650656.99
     },
     {
       "d": "2026-02-08",
@@ -2589,7 +2589,7 @@
       "ff": 2019.96,
       "pf": 259.76,
       "ef": 0,
-      "tvlBscBridgeUsdt": 140140.21,
+      "tvlBscBridgeUsdt": 140886.44,
       "tvlBscBridgeUsdc": 13334.6,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2597,9 +2597,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 153474.81,
+      "tvlBridgeOnly": 154221.04,
       "tvlFireblocks": 500400,
-      "tvlTotal": 653874.81
+      "tvlTotal": 654621.04
     },
     {
       "d": "2026-02-09",
@@ -2612,7 +2612,7 @@
       "ff": 3882.71,
       "pf": 268.26,
       "ef": 0,
-      "tvlBscBridgeUsdt": 143387.87,
+      "tvlBscBridgeUsdt": 145274.57,
       "tvlBscBridgeUsdc": 13334.6,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2620,9 +2620,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 156722.47,
+      "tvlBridgeOnly": 158609.17,
       "tvlFireblocks": 500400,
-      "tvlTotal": 657122.47
+      "tvlTotal": 659009.17
     },
     {
       "d": "2026-02-10",
@@ -2635,7 +2635,7 @@
       "ff": 4792.18,
       "pf": 748.02,
       "ef": 0,
-      "tvlBscBridgeUsdt": 142274.79,
+      "tvlBscBridgeUsdt": 142823.35,
       "tvlBscBridgeUsdc": 13308,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2643,9 +2643,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 155582.79,
+      "tvlBridgeOnly": 156131.35,
       "tvlFireblocks": 500400,
-      "tvlTotal": 655982.79
+      "tvlTotal": 656531.35
     },
     {
       "d": "2026-02-11",
@@ -2658,7 +2658,7 @@
       "ff": 5055.94,
       "pf": 722.75,
       "ef": 0,
-      "tvlBscBridgeUsdt": 141790.73,
+      "tvlBscBridgeUsdt": 142339.83,
       "tvlBscBridgeUsdc": 13308,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2666,9 +2666,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 155098.73,
+      "tvlBridgeOnly": 155647.83,
       "tvlFireblocks": 500400,
-      "tvlTotal": 655498.73
+      "tvlTotal": 656047.83
     },
     {
       "d": "2026-02-12",
@@ -2681,7 +2681,7 @@
       "ff": 4156.43,
       "pf": 715.92,
       "ef": 0,
-      "tvlBscBridgeUsdt": 142873.74,
+      "tvlBscBridgeUsdt": 141937.96,
       "tvlBscBridgeUsdc": 13308,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2689,9 +2689,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 156181.74,
+      "tvlBridgeOnly": 155245.96,
       "tvlFireblocks": 500400,
-      "tvlTotal": 656581.74
+      "tvlTotal": 655645.96
     },
     {
       "d": "2026-02-13",
@@ -2704,7 +2704,7 @@
       "ff": 4221.86,
       "pf": 514.54,
       "ef": 0,
-      "tvlBscBridgeUsdt": 139743.97,
+      "tvlBscBridgeUsdt": 139411.86,
       "tvlBscBridgeUsdc": 13308,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2712,9 +2712,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 153051.97,
+      "tvlBridgeOnly": 152719.86,
       "tvlFireblocks": 500400,
-      "tvlTotal": 653451.97
+      "tvlTotal": 653119.86
     },
     {
       "d": "2026-02-14",
@@ -2727,7 +2727,7 @@
       "ff": 2499.45,
       "pf": 364.3,
       "ef": 0,
-      "tvlBscBridgeUsdt": 130398.58,
+      "tvlBscBridgeUsdt": 131349.81,
       "tvlBscBridgeUsdc": 13308,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2735,9 +2735,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 143706.58,
+      "tvlBridgeOnly": 144657.81,
       "tvlFireblocks": 500400,
-      "tvlTotal": 644106.58
+      "tvlTotal": 645057.81
     },
     {
       "d": "2026-02-15",
@@ -2750,17 +2750,17 @@
       "ff": 1903.55,
       "pf": 399.39,
       "ef": 0,
-      "tvlBscBridgeUsdt": 129908.8,
-      "tvlBscBridgeUsdc": 13226.72,
+      "tvlBscBridgeUsdt": 129023.61,
+      "tvlBscBridgeUsdc": 13760.76,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 143135.52,
+      "tvlBridgeOnly": 142784.37,
       "tvlFireblocks": 500400,
-      "tvlTotal": 643535.52
+      "tvlTotal": 643184.37
     },
     {
       "d": "2026-02-16",
@@ -2773,7 +2773,7 @@
       "ff": 2329.11,
       "pf": 328.9,
       "ef": 0,
-      "tvlBscBridgeUsdt": 128664.82,
+      "tvlBscBridgeUsdt": 127171.01,
       "tvlBscBridgeUsdc": 13760.76,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2781,9 +2781,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 142425.58,
+      "tvlBridgeOnly": 140931.77,
       "tvlFireblocks": 500400,
-      "tvlTotal": 642825.58
+      "tvlTotal": 641331.77
     },
     {
       "d": "2026-02-17",
@@ -2796,7 +2796,7 @@
       "ff": 1732.29,
       "pf": 361.29,
       "ef": 0,
-      "tvlBscBridgeUsdt": 121935.86,
+      "tvlBscBridgeUsdt": 123019.49,
       "tvlBscBridgeUsdc": 13760.76,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2804,9 +2804,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 135696.62,
+      "tvlBridgeOnly": 136780.25,
       "tvlFireblocks": 500400,
-      "tvlTotal": 636096.62
+      "tvlTotal": 637180.25
     },
     {
       "d": "2026-02-18",
@@ -2819,7 +2819,7 @@
       "ff": 1512.14,
       "pf": 354.36,
       "ef": 0,
-      "tvlBscBridgeUsdt": 123592.24,
+      "tvlBscBridgeUsdt": 122581.45,
       "tvlBscBridgeUsdc": 13760.76,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2827,9 +2827,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 137353,
+      "tvlBridgeOnly": 136342.21,
       "tvlFireblocks": 500400,
-      "tvlTotal": 637753
+      "tvlTotal": 636742.21
     },
     {
       "d": "2026-02-19",
@@ -2842,17 +2842,17 @@
       "ff": 1524.43,
       "pf": 143.41,
       "ef": 0,
-      "tvlBscBridgeUsdt": 115461.9,
-      "tvlBscBridgeUsdc": 13760.76,
+      "tvlBscBridgeUsdt": 117303.72,
+      "tvlBscBridgeUsdc": 13744.79,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 129222.66,
+      "tvlBridgeOnly": 131048.51,
       "tvlFireblocks": 500400,
-      "tvlTotal": 629622.66
+      "tvlTotal": 631448.51
     },
     {
       "d": "2026-02-20",
@@ -2865,7 +2865,7 @@
       "ff": 1889.25,
       "pf": 309.28,
       "ef": 0,
-      "tvlBscBridgeUsdt": 117514.78,
+      "tvlBscBridgeUsdt": 118891.95,
       "tvlBscBridgeUsdc": 13744.79,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2873,9 +2873,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 131259.57,
+      "tvlBridgeOnly": 132636.74,
       "tvlFireblocks": 500400,
-      "tvlTotal": 631659.57
+      "tvlTotal": 633036.74
     },
     {
       "d": "2026-02-21",
@@ -2888,7 +2888,7 @@
       "ff": 1455.17,
       "pf": 250.92,
       "ef": 0,
-      "tvlBscBridgeUsdt": 123265.21,
+      "tvlBscBridgeUsdt": 122622.28,
       "tvlBscBridgeUsdc": 13744.79,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2896,9 +2896,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 137010,
+      "tvlBridgeOnly": 136367.07,
       "tvlFireblocks": 500400,
-      "tvlTotal": 637410
+      "tvlTotal": 636767.07
     },
     {
       "d": "2026-02-22",
@@ -2911,7 +2911,7 @@
       "ff": 1377.13,
       "pf": 138.64,
       "ef": 0,
-      "tvlBscBridgeUsdt": 123250.32,
+      "tvlBscBridgeUsdt": 123401.51,
       "tvlBscBridgeUsdc": 13744.79,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2919,9 +2919,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 136995.11,
+      "tvlBridgeOnly": 137146.3,
       "tvlFireblocks": 500400,
-      "tvlTotal": 637395.11
+      "tvlTotal": 637546.3
     },
     {
       "d": "2026-02-23",
@@ -2934,7 +2934,7 @@
       "ff": 3218.67,
       "pf": 322.1,
       "ef": 0,
-      "tvlBscBridgeUsdt": 120026.59,
+      "tvlBscBridgeUsdt": 119495.9,
       "tvlBscBridgeUsdc": 13744.79,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2942,9 +2942,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 133771.38,
+      "tvlBridgeOnly": 133240.69,
       "tvlFireblocks": 500400,
-      "tvlTotal": 634171.38
+      "tvlTotal": 633640.69
     },
     {
       "d": "2026-02-24",
@@ -2957,7 +2957,7 @@
       "ff": 3529.19,
       "pf": 277.76,
       "ef": 0,
-      "tvlBscBridgeUsdt": 119305.68,
+      "tvlBscBridgeUsdt": 119427.55,
       "tvlBscBridgeUsdc": 13744.79,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2965,9 +2965,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 133050.47,
+      "tvlBridgeOnly": 133172.34,
       "tvlFireblocks": 500400,
-      "tvlTotal": 633450.47
+      "tvlTotal": 633572.34
     },
     {
       "d": "2026-02-25",
@@ -2980,7 +2980,7 @@
       "ff": 3125.66,
       "pf": 176.51,
       "ef": 0,
-      "tvlBscBridgeUsdt": 120217.02,
+      "tvlBscBridgeUsdt": 120516.52,
       "tvlBscBridgeUsdc": 13744.79,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -2988,9 +2988,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 133961.81,
+      "tvlBridgeOnly": 134261.31,
       "tvlFireblocks": 500400,
-      "tvlTotal": 634361.81
+      "tvlTotal": 634661.31
     },
     {
       "d": "2026-02-26",
@@ -3003,7 +3003,7 @@
       "ff": 3926.74,
       "pf": 107.01,
       "ef": 0,
-      "tvlBscBridgeUsdt": 122006.54,
+      "tvlBscBridgeUsdt": 125028.52,
       "tvlBscBridgeUsdc": 13744.79,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3011,9 +3011,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 135751.33,
+      "tvlBridgeOnly": 138773.31,
       "tvlFireblocks": 500400,
-      "tvlTotal": 636151.33
+      "tvlTotal": 639173.31
     },
     {
       "d": "2026-02-27",
@@ -3026,17 +3026,17 @@
       "ff": 2819.98,
       "pf": 96.89,
       "ef": 0,
-      "tvlBscBridgeUsdt": 127330.49,
-      "tvlBscBridgeUsdc": 13744.79,
+      "tvlBscBridgeUsdt": 127433.41,
+      "tvlBscBridgeUsdc": 13531.79,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 141075.28,
+      "tvlBridgeOnly": 140965.2,
       "tvlFireblocks": 500400,
-      "tvlTotal": 641475.28
+      "tvlTotal": 641365.2
     },
     {
       "d": "2026-02-28",
@@ -3049,17 +3049,17 @@
       "ff": 2387.95,
       "pf": 136.84,
       "ef": 0,
-      "tvlBscBridgeUsdt": 129548.54,
-      "tvlBscBridgeUsdc": 13531.79,
+      "tvlBscBridgeUsdt": 129890.32,
+      "tvlBscBridgeUsdc": 13541.79,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 143080.33,
+      "tvlBridgeOnly": 143432.11,
       "tvlFireblocks": 500400,
-      "tvlTotal": 643480.33
+      "tvlTotal": 643832.11
     },
     {
       "d": "2026-03-01",
@@ -3072,7 +3072,7 @@
       "ff": 4955.87,
       "pf": 338.64,
       "ef": 0,
-      "tvlBscBridgeUsdt": 131856.14,
+      "tvlBscBridgeUsdt": 134260,
       "tvlBscBridgeUsdc": 13593.09,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3080,9 +3080,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 145449.23,
+      "tvlBridgeOnly": 147853.09,
       "tvlFireblocks": 500400,
-      "tvlTotal": 645849.23
+      "tvlTotal": 648253.09
     },
     {
       "d": "2026-03-02",
@@ -3095,7 +3095,7 @@
       "ff": 6254.68,
       "pf": 214.46,
       "ef": 0,
-      "tvlBscBridgeUsdt": 133564.13,
+      "tvlBscBridgeUsdt": 132532.4,
       "tvlBscBridgeUsdc": 13593.09,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3103,9 +3103,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 147157.22,
+      "tvlBridgeOnly": 146125.49,
       "tvlFireblocks": 500400,
-      "tvlTotal": 647557.22
+      "tvlTotal": 646525.49
     },
     {
       "d": "2026-03-03",
@@ -3118,7 +3118,7 @@
       "ff": 4748.13,
       "pf": 521.73,
       "ef": 0,
-      "tvlBscBridgeUsdt": 133328.15,
+      "tvlBscBridgeUsdt": 133555.48,
       "tvlBscBridgeUsdc": 13593.09,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3126,9 +3126,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 146921.24,
+      "tvlBridgeOnly": 147148.57,
       "tvlFireblocks": 500400,
-      "tvlTotal": 647321.24
+      "tvlTotal": 647548.57
     },
     {
       "d": "2026-03-04",
@@ -3141,7 +3141,7 @@
       "ff": 3048.66,
       "pf": 272.1,
       "ef": 0,
-      "tvlBscBridgeUsdt": 134142.91,
+      "tvlBscBridgeUsdt": 133375.44,
       "tvlBscBridgeUsdc": 13593.09,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3149,9 +3149,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 147736,
+      "tvlBridgeOnly": 146968.53,
       "tvlFireblocks": 500400,
-      "tvlTotal": 648136
+      "tvlTotal": 647368.53
     },
     {
       "d": "2026-03-05",
@@ -3164,7 +3164,7 @@
       "ff": 4063.84,
       "pf": 293.88,
       "ef": 0,
-      "tvlBscBridgeUsdt": 133696.77,
+      "tvlBscBridgeUsdt": 135062.04,
       "tvlBscBridgeUsdc": 13593.09,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3172,9 +3172,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 147289.86,
+      "tvlBridgeOnly": 148655.13,
       "tvlFireblocks": 500400,
-      "tvlTotal": 647689.86
+      "tvlTotal": 649055.13
     },
     {
       "d": "2026-03-06",
@@ -3187,7 +3187,7 @@
       "ff": 3887.44,
       "pf": 160.44,
       "ef": 0,
-      "tvlBscBridgeUsdt": 135537.27,
+      "tvlBscBridgeUsdt": 136457.69,
       "tvlBscBridgeUsdc": 13593.09,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3195,9 +3195,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 149130.36,
+      "tvlBridgeOnly": 150050.78,
       "tvlFireblocks": 500400,
-      "tvlTotal": 649530.36
+      "tvlTotal": 650450.78
     },
     {
       "d": "2026-03-07",
@@ -3210,7 +3210,7 @@
       "ff": 2223.74,
       "pf": 74.28,
       "ef": 0,
-      "tvlBscBridgeUsdt": 135831.15,
+      "tvlBscBridgeUsdt": 136914.53,
       "tvlBscBridgeUsdc": 13593.09,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3218,9 +3218,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 149424.24,
+      "tvlBridgeOnly": 150507.62,
       "tvlFireblocks": 500400,
-      "tvlTotal": 649824.24
+      "tvlTotal": 650907.62
     },
     {
       "d": "2026-03-08",
@@ -3233,7 +3233,7 @@
       "ff": 2701.61,
       "pf": 70.89,
       "ef": 0,
-      "tvlBscBridgeUsdt": 138130.82,
+      "tvlBscBridgeUsdt": 139589.47,
       "tvlBscBridgeUsdc": 13593.09,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3241,9 +3241,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 151723.91,
+      "tvlBridgeOnly": 153182.56,
       "tvlFireblocks": 500400,
-      "tvlTotal": 652123.91
+      "tvlTotal": 653582.56
     },
     {
       "d": "2026-03-09",
@@ -3256,7 +3256,7 @@
       "ff": 3294.6,
       "pf": 172.88,
       "ef": 0,
-      "tvlBscBridgeUsdt": 140834.42,
+      "tvlBscBridgeUsdt": 142382.54,
       "tvlBscBridgeUsdc": 13593.09,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3264,9 +3264,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 154427.51,
+      "tvlBridgeOnly": 155975.63,
       "tvlFireblocks": 500400,
-      "tvlTotal": 654827.51
+      "tvlTotal": 656375.63
     },
     {
       "d": "2026-03-10",
@@ -3302,7 +3302,7 @@
       "ff": 3885.56,
       "pf": 208.88,
       "ef": 0,
-      "tvlBscBridgeUsdt": 143644.01,
+      "tvlBscBridgeUsdt": 141456.21,
       "tvlBscBridgeUsdc": 13570.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3310,9 +3310,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 157214.72,
+      "tvlBridgeOnly": 155026.92,
       "tvlFireblocks": 500400,
-      "tvlTotal": 657614.72
+      "tvlTotal": 655426.92
     },
     {
       "d": "2026-03-12",
@@ -3325,7 +3325,7 @@
       "ff": 5097.37,
       "pf": 245.96,
       "ef": 0,
-      "tvlBscBridgeUsdt": 141496.79,
+      "tvlBscBridgeUsdt": 141919.06,
       "tvlBscBridgeUsdc": 13570.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3333,9 +3333,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 155067.5,
+      "tvlBridgeOnly": 155489.77,
       "tvlFireblocks": 500400,
-      "tvlTotal": 655467.5
+      "tvlTotal": 655889.77
     },
     {
       "d": "2026-03-13",
@@ -3348,7 +3348,7 @@
       "ff": 7135.61,
       "pf": 366.14,
       "ef": 0,
-      "tvlBscBridgeUsdt": 144294.85,
+      "tvlBscBridgeUsdt": 147477.79,
       "tvlBscBridgeUsdc": 13570.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3356,9 +3356,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 157865.56,
+      "tvlBridgeOnly": 161048.5,
       "tvlFireblocks": 500400,
-      "tvlTotal": 658265.56
+      "tvlTotal": 661448.5
     },
     {
       "d": "2026-03-14",
@@ -3371,7 +3371,7 @@
       "ff": 2409.12,
       "pf": 170.2,
       "ef": 0,
-      "tvlBscBridgeUsdt": 146539.96,
+      "tvlBscBridgeUsdt": 145417.69,
       "tvlBscBridgeUsdc": 14069.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3379,9 +3379,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 160609.67,
+      "tvlBridgeOnly": 159487.4,
       "tvlFireblocks": 500400,
-      "tvlTotal": 661009.67
+      "tvlTotal": 659887.4
     },
     {
       "d": "2026-03-15",
@@ -3394,17 +3394,17 @@
       "ff": 1450.46,
       "pf": 156.07,
       "ef": 0,
-      "tvlBscBridgeUsdt": 150154.26,
-      "tvlBscBridgeUsdc": 15045.71,
+      "tvlBscBridgeUsdt": 150953.65,
+      "tvlBscBridgeUsdc": 15055.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 165199.97,
+      "tvlBridgeOnly": 166009.36,
       "tvlFireblocks": 500400,
-      "tvlTotal": 665599.97
+      "tvlTotal": 666409.36
     },
     {
       "d": "2026-03-16",
@@ -3417,7 +3417,7 @@
       "ff": 3658.08,
       "pf": 212.29,
       "ef": 0,
-      "tvlBscBridgeUsdt": 144645.46,
+      "tvlBscBridgeUsdt": 144441.41,
       "tvlBscBridgeUsdc": 13957.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3425,9 +3425,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 158603.17,
+      "tvlBridgeOnly": 158399.12,
       "tvlFireblocks": 500400,
-      "tvlTotal": 659003.17
+      "tvlTotal": 658799.12
     },
     {
       "d": "2026-03-17",
@@ -3440,7 +3440,7 @@
       "ff": 3884.06,
       "pf": 189.29,
       "ef": 0,
-      "tvlBscBridgeUsdt": 143074.31,
+      "tvlBscBridgeUsdt": 143002.94,
       "tvlBscBridgeUsdc": 13957.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3448,9 +3448,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 157032.02,
+      "tvlBridgeOnly": 156960.65,
       "tvlFireblocks": 500400,
-      "tvlTotal": 657432.02
+      "tvlTotal": 657360.65
     },
     {
       "d": "2026-03-18",
@@ -3463,7 +3463,7 @@
       "ff": 4257.91,
       "pf": 124.26,
       "ef": 0,
-      "tvlBscBridgeUsdt": 147057.4,
+      "tvlBscBridgeUsdt": 147544.5,
       "tvlBscBridgeUsdc": 13957.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3471,9 +3471,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 161015.11,
+      "tvlBridgeOnly": 161502.21,
       "tvlFireblocks": 500400,
-      "tvlTotal": 661415.11
+      "tvlTotal": 661902.21
     },
     {
       "d": "2026-03-19",
@@ -3486,7 +3486,7 @@
       "ff": 3529.56,
       "pf": 467.07,
       "ef": 0,
-      "tvlBscBridgeUsdt": 147793.88,
+      "tvlBscBridgeUsdt": 147634.37,
       "tvlBscBridgeUsdc": 13957.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3494,9 +3494,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 161751.59,
+      "tvlBridgeOnly": 161592.08,
       "tvlFireblocks": 500400,
-      "tvlTotal": 662151.59
+      "tvlTotal": 661992.08
     },
     {
       "d": "2026-03-20",
@@ -3509,7 +3509,7 @@
       "ff": 2839.29,
       "pf": 434.3,
       "ef": 0,
-      "tvlBscBridgeUsdt": 149943.08,
+      "tvlBscBridgeUsdt": 146561.71,
       "tvlBscBridgeUsdc": 13957.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3517,9 +3517,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 163900.79,
+      "tvlBridgeOnly": 160519.42,
       "tvlFireblocks": 500400,
-      "tvlTotal": 664300.79
+      "tvlTotal": 660919.42
     },
     {
       "d": "2026-03-21",
@@ -3532,7 +3532,7 @@
       "ff": 2377.91,
       "pf": 318.51,
       "ef": 0,
-      "tvlBscBridgeUsdt": 148793.6,
+      "tvlBscBridgeUsdt": 149390.88,
       "tvlBscBridgeUsdc": 13957.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3540,9 +3540,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 162751.31,
+      "tvlBridgeOnly": 163348.59,
       "tvlFireblocks": 500400,
-      "tvlTotal": 663151.31
+      "tvlTotal": 663748.59
     },
     {
       "d": "2026-03-22",
@@ -3555,7 +3555,7 @@
       "ff": 1863.53,
       "pf": 357.78,
       "ef": 0,
-      "tvlBscBridgeUsdt": 154075.96,
+      "tvlBscBridgeUsdt": 155011.1,
       "tvlBscBridgeUsdc": 13957.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3563,9 +3563,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 168033.67,
+      "tvlBridgeOnly": 168968.81,
       "tvlFireblocks": 500400,
-      "tvlTotal": 668433.67
+      "tvlTotal": 669368.81
     },
     {
       "d": "2026-03-23",
@@ -3578,7 +3578,7 @@
       "ff": 2633.33,
       "pf": 234.06,
       "ef": 0,
-      "tvlBscBridgeUsdt": 157705.44,
+      "tvlBscBridgeUsdt": 156901.39,
       "tvlBscBridgeUsdc": 13957.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3586,9 +3586,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 171663.15,
+      "tvlBridgeOnly": 170859.1,
       "tvlFireblocks": 500400,
-      "tvlTotal": 672063.15
+      "tvlTotal": 671259.1
     },
     {
       "d": "2026-03-24",
@@ -3601,7 +3601,7 @@
       "ff": 2233.41,
       "pf": 177.86,
       "ef": 0,
-      "tvlBscBridgeUsdt": 157758.13,
+      "tvlBscBridgeUsdt": 158288.03,
       "tvlBscBridgeUsdc": 13957.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3609,9 +3609,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 171715.84,
+      "tvlBridgeOnly": 172245.74,
       "tvlFireblocks": 500400,
-      "tvlTotal": 672115.84
+      "tvlTotal": 672645.74
     },
     {
       "d": "2026-03-25",
@@ -3624,7 +3624,7 @@
       "ff": 3766.05,
       "pf": 323.8,
       "ef": 0,
-      "tvlBscBridgeUsdt": 159830.38,
+      "tvlBscBridgeUsdt": 159721.31,
       "tvlBscBridgeUsdc": 13957.71,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3632,9 +3632,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 173788.09,
+      "tvlBridgeOnly": 173679.02,
       "tvlFireblocks": 500400,
-      "tvlTotal": 674188.09
+      "tvlTotal": 674079.02
     },
     {
       "d": "2026-03-26",
@@ -3647,7 +3647,7 @@
       "ff": 3570.42,
       "pf": 123.6,
       "ef": 0,
-      "tvlBscBridgeUsdt": 150933.92,
+      "tvlBscBridgeUsdt": 144865.45,
       "tvlBscBridgeUsdc": 13781.33,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3655,9 +3655,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 164715.25,
+      "tvlBridgeOnly": 158646.78,
       "tvlFireblocks": 500400,
-      "tvlTotal": 665115.25
+      "tvlTotal": 659046.78
     },
     {
       "d": "2026-03-27",
@@ -3670,7 +3670,7 @@
       "ff": 2864.19,
       "pf": 115.53,
       "ef": 0,
-      "tvlBscBridgeUsdt": 143673.2,
+      "tvlBscBridgeUsdt": 143505.37,
       "tvlBscBridgeUsdc": 13781.33,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3678,9 +3678,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 157454.53,
+      "tvlBridgeOnly": 157286.7,
       "tvlFireblocks": 500400,
-      "tvlTotal": 657854.53
+      "tvlTotal": 657686.7
     },
     {
       "d": "2026-03-28",
@@ -3693,7 +3693,7 @@
       "ff": 1372.44,
       "pf": 360.07,
       "ef": 0,
-      "tvlBscBridgeUsdt": 150634.69,
+      "tvlBscBridgeUsdt": 162197.19,
       "tvlBscBridgeUsdc": 13781.33,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3701,9 +3701,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 164416.02,
+      "tvlBridgeOnly": 175978.52,
       "tvlFireblocks": 500400,
-      "tvlTotal": 664816.02
+      "tvlTotal": 676378.52
     },
     {
       "d": "2026-03-29",
@@ -3716,7 +3716,7 @@
       "ff": 887.86,
       "pf": 98.59,
       "ef": 0,
-      "tvlBscBridgeUsdt": 163770.86,
+      "tvlBscBridgeUsdt": 164899.16,
       "tvlBscBridgeUsdc": 13781.33,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3724,9 +3724,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 177552.19,
+      "tvlBridgeOnly": 178680.49,
       "tvlFireblocks": 500400,
-      "tvlTotal": 677952.19
+      "tvlTotal": 679080.49
     },
     {
       "d": "2026-03-30",
@@ -3762,7 +3762,7 @@
       "ff": 1611.83,
       "pf": 60.79,
       "ef": 0,
-      "tvlBscBridgeUsdt": 165366.12,
+      "tvlBscBridgeUsdt": 165554.11,
       "tvlBscBridgeUsdc": 13781.33,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3770,9 +3770,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 179147.45,
+      "tvlBridgeOnly": 179335.44,
       "tvlFireblocks": 500400,
-      "tvlTotal": 679547.45
+      "tvlTotal": 679735.44
     },
     {
       "d": "2026-04-01",
@@ -3785,7 +3785,7 @@
       "ff": 1236.22,
       "pf": 80.49,
       "ef": 0,
-      "tvlBscBridgeUsdt": 167150.05,
+      "tvlBscBridgeUsdt": 166179.06,
       "tvlBscBridgeUsdc": 13781.33,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3793,9 +3793,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 180931.38,
+      "tvlBridgeOnly": 179960.39,
       "tvlFireblocks": 500400,
-      "tvlTotal": 681331.38
+      "tvlTotal": 680360.39
     },
     {
       "d": "2026-04-02",
@@ -3808,7 +3808,7 @@
       "ff": 1721.55,
       "pf": 182.57,
       "ef": 0,
-      "tvlBscBridgeUsdt": 164285.27,
+      "tvlBscBridgeUsdt": 163557.81,
       "tvlBscBridgeUsdc": 13781.33,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3816,9 +3816,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 178066.6,
+      "tvlBridgeOnly": 177339.14,
       "tvlFireblocks": 500400,
-      "tvlTotal": 678466.6
+      "tvlTotal": 677739.14
     },
     {
       "d": "2026-04-03",
@@ -3831,7 +3831,7 @@
       "ff": 5084.65,
       "pf": 236.15,
       "ef": 0,
-      "tvlBscBridgeUsdt": 164371.58,
+      "tvlBscBridgeUsdt": 164409.4,
       "tvlBscBridgeUsdc": 13781.33,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3839,9 +3839,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 178152.91,
+      "tvlBridgeOnly": 178190.73,
       "tvlFireblocks": 500400,
-      "tvlTotal": 678552.91
+      "tvlTotal": 678590.73
     },
     {
       "d": "2026-04-04",
@@ -3854,7 +3854,7 @@
       "ff": 1652.18,
       "pf": 296.26,
       "ef": 0,
-      "tvlBscBridgeUsdt": 165846.05,
+      "tvlBscBridgeUsdt": 165927.49,
       "tvlBscBridgeUsdc": 13781.33,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3862,9 +3862,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 179627.38,
+      "tvlBridgeOnly": 179708.82,
       "tvlFireblocks": 500400,
-      "tvlTotal": 680027.38
+      "tvlTotal": 680108.82
     },
     {
       "d": "2026-04-05",
@@ -3877,7 +3877,7 @@
       "ff": 2164.81,
       "pf": 1680.87,
       "ef": 0,
-      "tvlBscBridgeUsdt": 166842.53,
+      "tvlBscBridgeUsdt": 166865.53,
       "tvlBscBridgeUsdc": 13781.33,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3885,9 +3885,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 180623.86,
+      "tvlBridgeOnly": 180646.86,
       "tvlFireblocks": 500400,
-      "tvlTotal": 681023.86
+      "tvlTotal": 681046.86
     },
     {
       "d": "2026-04-06",
@@ -3900,7 +3900,7 @@
       "ff": 2389.64,
       "pf": 35.52,
       "ef": 0,
-      "tvlBscBridgeUsdt": 163757.18,
+      "tvlBscBridgeUsdt": 165336.81,
       "tvlBscBridgeUsdc": 13781.33,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3908,9 +3908,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 177538.51,
+      "tvlBridgeOnly": 179118.14,
       "tvlFireblocks": 500400,
-      "tvlTotal": 677938.51
+      "tvlTotal": 679518.14
     },
     {
       "d": "2026-04-07",
@@ -3923,7 +3923,7 @@
       "ff": 1816.32,
       "pf": 40.59,
       "ef": 0,
-      "tvlBscBridgeUsdt": 166452.71,
+      "tvlBscBridgeUsdt": 164884.57,
       "tvlBscBridgeUsdc": 13781.33,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3931,9 +3931,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 180234.04,
+      "tvlBridgeOnly": 178665.9,
       "tvlFireblocks": 500400,
-      "tvlTotal": 680634.04
+      "tvlTotal": 679065.9
     },
     {
       "d": "2026-04-08",
@@ -3946,7 +3946,7 @@
       "ff": 2576.34,
       "pf": 368.93,
       "ef": 0,
-      "tvlBscBridgeUsdt": 163469.28,
+      "tvlBscBridgeUsdt": 163695.49,
       "tvlBscBridgeUsdc": 15255.03,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -3954,9 +3954,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 178724.31,
+      "tvlBridgeOnly": 178950.52,
       "tvlFireblocks": 500400,
-      "tvlTotal": 679124.31
+      "tvlTotal": 679350.52
     },
     {
       "d": "2026-04-09",
@@ -3969,17 +3969,17 @@
       "ff": 3063.93,
       "pf": 20.12,
       "ef": 0,
-      "tvlBscBridgeUsdt": 165948.22,
-      "tvlBscBridgeUsdc": 12457.73,
+      "tvlBscBridgeUsdt": 167331.09,
+      "tvlBscBridgeUsdc": 12455.79,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 178405.95,
+      "tvlBridgeOnly": 179786.88,
       "tvlFireblocks": 500400,
-      "tvlTotal": 678805.95
+      "tvlTotal": 680186.88
     },
     {
       "d": "2026-04-10",
@@ -3992,7 +3992,7 @@
       "ff": 3204.55,
       "pf": 31.57,
       "ef": 0,
-      "tvlBscBridgeUsdt": 168142.19,
+      "tvlBscBridgeUsdt": 163170.26,
       "tvlBscBridgeUsdc": 12163.54,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4000,9 +4000,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 180305.73,
+      "tvlBridgeOnly": 175333.8,
       "tvlFireblocks": 500400,
-      "tvlTotal": 680705.73
+      "tvlTotal": 675733.8
     },
     {
       "d": "2026-04-11",
@@ -4015,7 +4015,7 @@
       "ff": 4186.73,
       "pf": 47.8,
       "ef": 0,
-      "tvlBscBridgeUsdt": 168175.18,
+      "tvlBscBridgeUsdt": 167697.74,
       "tvlBscBridgeUsdc": 12163.54,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4023,9 +4023,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 180338.72,
+      "tvlBridgeOnly": 179861.28,
       "tvlFireblocks": 500400,
-      "tvlTotal": 680738.72
+      "tvlTotal": 680261.28
     },
     {
       "d": "2026-04-12",
@@ -4038,7 +4038,7 @@
       "ff": 4683.52,
       "pf": 103.03,
       "ef": 0,
-      "tvlBscBridgeUsdt": 168015.31,
+      "tvlBscBridgeUsdt": 168927.83,
       "tvlBscBridgeUsdc": 12163.54,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4046,9 +4046,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 180178.85,
+      "tvlBridgeOnly": 181091.37,
       "tvlFireblocks": 500400,
-      "tvlTotal": 680578.85
+      "tvlTotal": 681491.37
     },
     {
       "d": "2026-04-13",
@@ -4061,7 +4061,7 @@
       "ff": 5043.51,
       "pf": 94.84,
       "ef": 0,
-      "tvlBscBridgeUsdt": 171973.86,
+      "tvlBscBridgeUsdt": 172342.88,
       "tvlBscBridgeUsdc": 12163.54,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4069,9 +4069,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 184137.4,
+      "tvlBridgeOnly": 184506.42,
       "tvlFireblocks": 500400,
-      "tvlTotal": 684537.4
+      "tvlTotal": 684906.42
     },
     {
       "d": "2026-04-14",
@@ -4084,7 +4084,7 @@
       "ff": 4110.53,
       "pf": 67.27,
       "ef": 0,
-      "tvlBscBridgeUsdt": 178310.47,
+      "tvlBscBridgeUsdt": 178500.33,
       "tvlBscBridgeUsdc": 12163.54,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4092,9 +4092,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 190474.01,
+      "tvlBridgeOnly": 190663.87,
       "tvlFireblocks": 500400,
-      "tvlTotal": 690874.01
+      "tvlTotal": 691063.87
     },
     {
       "d": "2026-04-15",
@@ -4107,7 +4107,7 @@
       "ff": 5787.69,
       "pf": 28.94,
       "ef": 0,
-      "tvlBscBridgeUsdt": 185186.19,
+      "tvlBscBridgeUsdt": 191293.95,
       "tvlBscBridgeUsdc": 12163.54,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4115,9 +4115,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 197349.73,
+      "tvlBridgeOnly": 203457.49,
       "tvlFireblocks": 500400,
-      "tvlTotal": 697749.73
+      "tvlTotal": 703857.49
     },
     {
       "d": "2026-04-16",
@@ -4130,17 +4130,17 @@
       "ff": 4886.56,
       "pf": 171.65,
       "ef": 0,
-      "tvlBscBridgeUsdt": 195077.77,
-      "tvlBscBridgeUsdc": 13263.54,
+      "tvlBscBridgeUsdt": 195057.29,
+      "tvlBscBridgeUsdc": 13220.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
       "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 208341.31,
+      "tvlBridgeOnly": 208277.78,
       "tvlFireblocks": 500400,
-      "tvlTotal": 708741.31
+      "tvlTotal": 708677.78
     },
     {
       "d": "2026-04-17",
@@ -4153,7 +4153,7 @@
       "ff": 5045.46,
       "pf": 335.43,
       "ef": 0,
-      "tvlBscBridgeUsdt": 197665.53,
+      "tvlBscBridgeUsdt": 198501.76,
       "tvlBscBridgeUsdc": 13220.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4161,9 +4161,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 210886.02,
+      "tvlBridgeOnly": 211722.25,
       "tvlFireblocks": 500400,
-      "tvlTotal": 711286.02
+      "tvlTotal": 712122.25
     },
     {
       "d": "2026-04-18",
@@ -4176,7 +4176,7 @@
       "ff": 4536.45,
       "pf": 137.11,
       "ef": 0,
-      "tvlBscBridgeUsdt": 200372.32,
+      "tvlBscBridgeUsdt": 199732.16,
       "tvlBscBridgeUsdc": 13220.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4184,9 +4184,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 213592.81,
+      "tvlBridgeOnly": 212952.65,
       "tvlFireblocks": 500400,
-      "tvlTotal": 713992.81
+      "tvlTotal": 713352.65
     },
     {
       "d": "2026-04-19",
@@ -4199,7 +4199,7 @@
       "ff": 3588.65,
       "pf": 40.76,
       "ef": 0,
-      "tvlBscBridgeUsdt": 200073.66,
+      "tvlBscBridgeUsdt": 200398.86,
       "tvlBscBridgeUsdc": 13220.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4207,9 +4207,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 213294.15,
+      "tvlBridgeOnly": 213619.35,
       "tvlFireblocks": 500400,
-      "tvlTotal": 713694.15
+      "tvlTotal": 714019.35
     },
     {
       "d": "2026-04-20",
@@ -4222,7 +4222,7 @@
       "ff": 4036.7,
       "pf": 125.78,
       "ef": 0,
-      "tvlBscBridgeUsdt": 203773.47,
+      "tvlBscBridgeUsdt": 205135.77,
       "tvlBscBridgeUsdc": 13220.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4230,9 +4230,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 216993.96,
+      "tvlBridgeOnly": 218356.26,
       "tvlFireblocks": 500400,
-      "tvlTotal": 717393.96
+      "tvlTotal": 718756.26
     },
     {
       "d": "2026-04-21",
@@ -4245,7 +4245,7 @@
       "ff": 3909.42,
       "pf": 199.85,
       "ef": 0,
-      "tvlBscBridgeUsdt": 208237.04,
+      "tvlBscBridgeUsdt": 213444.87,
       "tvlBscBridgeUsdc": 13220.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4253,9 +4253,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 221457.53,
+      "tvlBridgeOnly": 226665.36,
       "tvlFireblocks": 500400,
-      "tvlTotal": 721857.53
+      "tvlTotal": 727065.36
     },
     {
       "d": "2026-04-22",
@@ -4268,7 +4268,7 @@
       "ff": 2605.11,
       "pf": 53.44,
       "ef": 0,
-      "tvlBscBridgeUsdt": 214823.77,
+      "tvlBscBridgeUsdt": 211524,
       "tvlBscBridgeUsdc": 13220.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4276,9 +4276,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 228044.26,
+      "tvlBridgeOnly": 224744.49,
       "tvlFireblocks": 500400,
-      "tvlTotal": 728444.26
+      "tvlTotal": 725144.49
     },
     {
       "d": "2026-04-23",
@@ -4291,7 +4291,7 @@
       "ff": 3517.9,
       "pf": 757.2,
       "ef": 0,
-      "tvlBscBridgeUsdt": 218531.83,
+      "tvlBscBridgeUsdt": 219300.5,
       "tvlBscBridgeUsdc": 13220.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4299,9 +4299,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 231752.32,
+      "tvlBridgeOnly": 232520.99,
       "tvlFireblocks": 500400,
-      "tvlTotal": 732152.32
+      "tvlTotal": 732920.99
     },
     {
       "d": "2026-04-24",
@@ -4314,7 +4314,7 @@
       "ff": 3424.37,
       "pf": 112.22,
       "ef": 0,
-      "tvlBscBridgeUsdt": 220092.73,
+      "tvlBscBridgeUsdt": 216669.88,
       "tvlBscBridgeUsdc": 13220.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4322,9 +4322,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 233313.22,
+      "tvlBridgeOnly": 229890.37,
       "tvlFireblocks": 500400,
-      "tvlTotal": 733713.22
+      "tvlTotal": 730290.37
     },
     {
       "d": "2026-04-25",
@@ -4337,7 +4337,7 @@
       "ff": 4422.25,
       "pf": 217.93,
       "ef": 0,
-      "tvlBscBridgeUsdt": 217743.09,
+      "tvlBscBridgeUsdt": 220862.64,
       "tvlBscBridgeUsdc": 12971.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4345,9 +4345,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 230714.58,
+      "tvlBridgeOnly": 233834.13,
       "tvlFireblocks": 500400,
-      "tvlTotal": 731114.58
+      "tvlTotal": 734234.13
     },
     {
       "d": "2026-04-26",
@@ -4360,7 +4360,7 @@
       "ff": 3488.58,
       "pf": 48.02,
       "ef": 0,
-      "tvlBscBridgeUsdt": 216551.56,
+      "tvlBscBridgeUsdt": 218568.94,
       "tvlBscBridgeUsdc": 12971.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4368,9 +4368,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 229523.05,
+      "tvlBridgeOnly": 231540.43,
       "tvlFireblocks": 500400,
-      "tvlTotal": 729923.05
+      "tvlTotal": 731940.43
     },
     {
       "d": "2026-04-27",
@@ -4383,7 +4383,7 @@
       "ff": 4816.01,
       "pf": 411.18,
       "ef": 0,
-      "tvlBscBridgeUsdt": 219985.25,
+      "tvlBscBridgeUsdt": 221242.66,
       "tvlBscBridgeUsdc": 12971.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4391,9 +4391,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 232956.74,
+      "tvlBridgeOnly": 234214.15,
       "tvlFireblocks": 500400,
-      "tvlTotal": 733356.74
+      "tvlTotal": 734614.15
     },
     {
       "d": "2026-04-28",
@@ -4406,7 +4406,7 @@
       "ff": 3966.78,
       "pf": 275.11,
       "ef": 0,
-      "tvlBscBridgeUsdt": 223380.48,
+      "tvlBscBridgeUsdt": 221256.73,
       "tvlBscBridgeUsdc": 12971.49,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4414,9 +4414,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 236351.97,
+      "tvlBridgeOnly": 234228.22,
       "tvlFireblocks": 500400,
-      "tvlTotal": 736751.97
+      "tvlTotal": 734628.22
     },
     {
       "d": "2026-04-29",
@@ -4429,7 +4429,7 @@
       "ff": 4659.1,
       "pf": 266.02,
       "ef": 0,
-      "tvlBscBridgeUsdt": 222627.78,
+      "tvlBscBridgeUsdt": 222532.89,
       "tvlBscBridgeUsdc": 12552.94,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4437,9 +4437,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 235180.72,
+      "tvlBridgeOnly": 235085.83,
       "tvlFireblocks": 500400,
-      "tvlTotal": 735580.72
+      "tvlTotal": 735485.83
     },
     {
       "d": "2026-04-30",
@@ -4452,7 +4452,7 @@
       "ff": 2441.2,
       "pf": 61.01,
       "ef": 0,
-      "tvlBscBridgeUsdt": 224302.45,
+      "tvlBscBridgeUsdt": 227368.82,
       "tvlBscBridgeUsdc": 12552.94,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4460,9 +4460,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 236855.39,
+      "tvlBridgeOnly": 239921.76,
       "tvlFireblocks": 500400,
-      "tvlTotal": 737255.39
+      "tvlTotal": 740321.76
     },
     {
       "d": "2026-05-01",
@@ -4475,7 +4475,7 @@
       "ff": 2398.07,
       "pf": 170.54,
       "ef": 0,
-      "tvlBscBridgeUsdt": 233379.49,
+      "tvlBscBridgeUsdt": 230812.27,
       "tvlBscBridgeUsdc": 12300.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4483,9 +4483,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 245679.62,
+      "tvlBridgeOnly": 243112.4,
       "tvlFireblocks": 500400,
-      "tvlTotal": 746079.62
+      "tvlTotal": 743512.4
     },
     {
       "d": "2026-05-02",
@@ -4498,7 +4498,7 @@
       "ff": 2863,
       "pf": 276.84,
       "ef": 0,
-      "tvlBscBridgeUsdt": 234243.32,
+      "tvlBscBridgeUsdt": 234079.26,
       "tvlBscBridgeUsdc": 12300.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4506,9 +4506,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 246543.45,
+      "tvlBridgeOnly": 246379.39,
       "tvlFireblocks": 500400,
-      "tvlTotal": 746943.45
+      "tvlTotal": 746779.39
     },
     {
       "d": "2026-05-03",
@@ -4521,7 +4521,7 @@
       "ff": 2899.17,
       "pf": 117.61,
       "ef": 0,
-      "tvlBscBridgeUsdt": 231754.02,
+      "tvlBscBridgeUsdt": 231162.11,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4529,9 +4529,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 244053.15,
+      "tvlBridgeOnly": 243461.24,
       "tvlFireblocks": 500400,
-      "tvlTotal": 744453.15
+      "tvlTotal": 743861.24
     },
     {
       "d": "2026-05-04",
@@ -4544,7 +4544,7 @@
       "ff": 3931.61,
       "pf": 72.86,
       "ef": 0,
-      "tvlBscBridgeUsdt": 230698.49,
+      "tvlBscBridgeUsdt": 229246.31,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4552,9 +4552,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 242997.62,
+      "tvlBridgeOnly": 241545.44,
       "tvlFireblocks": 500400,
-      "tvlTotal": 743397.62
+      "tvlTotal": 741945.44
     },
     {
       "d": "2026-05-05",
@@ -4567,7 +4567,7 @@
       "ff": 3384.81,
       "pf": 147.31,
       "ef": 0,
-      "tvlBscBridgeUsdt": 230989.03,
+      "tvlBscBridgeUsdt": 228390.31,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4575,9 +4575,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 243288.16,
+      "tvlBridgeOnly": 240689.44,
       "tvlFireblocks": 500400,
-      "tvlTotal": 743688.16
+      "tvlTotal": 741089.44
     },
     {
       "d": "2026-05-06",
@@ -4590,7 +4590,7 @@
       "ff": 3495.34,
       "pf": 206.13,
       "ef": 0,
-      "tvlBscBridgeUsdt": 226479.24,
+      "tvlBscBridgeUsdt": 229069.87,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4598,9 +4598,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 238778.37,
+      "tvlBridgeOnly": 241369,
       "tvlFireblocks": 500400,
-      "tvlTotal": 739178.37
+      "tvlTotal": 741769
     },
     {
       "d": "2026-05-07",
@@ -4613,7 +4613,7 @@
       "ff": 4167.71,
       "pf": 121.75,
       "ef": 0,
-      "tvlBscBridgeUsdt": 230577.12,
+      "tvlBscBridgeUsdt": 230639.54,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4621,9 +4621,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 242876.25,
+      "tvlBridgeOnly": 242938.67,
       "tvlFireblocks": 500400,
-      "tvlTotal": 743276.25
+      "tvlTotal": 743338.67
     },
     {
       "d": "2026-05-08",
@@ -4636,7 +4636,7 @@
       "ff": 4505.03,
       "pf": 382.27,
       "ef": 0,
-      "tvlBscBridgeUsdt": 238011.15,
+      "tvlBscBridgeUsdt": 238267.25,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4644,9 +4644,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 250310.28,
+      "tvlBridgeOnly": 250566.38,
       "tvlFireblocks": 500400,
-      "tvlTotal": 750710.28
+      "tvlTotal": 750966.38
     },
     {
       "d": "2026-05-09",
@@ -4659,7 +4659,7 @@
       "ff": 3869.9,
       "pf": 339.41,
       "ef": 0,
-      "tvlBscBridgeUsdt": 238259.78,
+      "tvlBscBridgeUsdt": 237966.93,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4667,9 +4667,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 250558.91,
+      "tvlBridgeOnly": 250266.06,
       "tvlFireblocks": 500400,
-      "tvlTotal": 750958.91
+      "tvlTotal": 750666.06
     },
     {
       "d": "2026-05-10",
@@ -4682,7 +4682,7 @@
       "ff": 3385.47,
       "pf": 655.65,
       "ef": 0,
-      "tvlBscBridgeUsdt": 241317.94,
+      "tvlBscBridgeUsdt": 240689.85,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4690,9 +4690,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 253617.07,
+      "tvlBridgeOnly": 252988.98,
       "tvlFireblocks": 500400,
-      "tvlTotal": 754017.07
+      "tvlTotal": 753388.98
     },
     {
       "d": "2026-05-11",
@@ -4705,7 +4705,7 @@
       "ff": 4334.95,
       "pf": 345.04,
       "ef": 0,
-      "tvlBscBridgeUsdt": 243695.63,
+      "tvlBscBridgeUsdt": 247556,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4713,9 +4713,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 255994.76,
+      "tvlBridgeOnly": 259855.13,
       "tvlFireblocks": 500400,
-      "tvlTotal": 756394.76
+      "tvlTotal": 760255.13
     },
     {
       "d": "2026-05-12",
@@ -4728,7 +4728,7 @@
       "ff": 3951.92,
       "pf": 205.97,
       "ef": 0,
-      "tvlBscBridgeUsdt": 251012.46,
+      "tvlBscBridgeUsdt": 252285.87,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4736,9 +4736,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 263311.59,
+      "tvlBridgeOnly": 264585,
       "tvlFireblocks": 500400,
-      "tvlTotal": 763711.59
+      "tvlTotal": 764985
     },
     {
       "d": "2026-05-13",
@@ -4751,7 +4751,7 @@
       "ff": 6424.81,
       "pf": 327.99,
       "ef": 0,
-      "tvlBscBridgeUsdt": 250900.06,
+      "tvlBscBridgeUsdt": 249792.3,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4759,9 +4759,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 263199.19,
+      "tvlBridgeOnly": 262091.43,
       "tvlFireblocks": 500400,
-      "tvlTotal": 763599.19
+      "tvlTotal": 762491.43
     },
     {
       "d": "2026-05-14",
@@ -4774,7 +4774,7 @@
       "ff": 5113.57,
       "pf": 339.41,
       "ef": 0,
-      "tvlBscBridgeUsdt": 256064.34,
+      "tvlBscBridgeUsdt": 255246.69,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4782,9 +4782,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 268363.47,
+      "tvlBridgeOnly": 267545.82,
       "tvlFireblocks": 500400,
-      "tvlTotal": 768763.47
+      "tvlTotal": 767945.82
     },
     {
       "d": "2026-05-15",
@@ -4797,7 +4797,7 @@
       "ff": 5014.29,
       "pf": 222.18,
       "ef": 0,
-      "tvlBscBridgeUsdt": 255439.96,
+      "tvlBscBridgeUsdt": 256027.5,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4805,9 +4805,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 267739.09,
+      "tvlBridgeOnly": 268326.63,
       "tvlFireblocks": 500400,
-      "tvlTotal": 768139.09
+      "tvlTotal": 768726.63
     },
     {
       "d": "2026-05-16",
@@ -4820,7 +4820,7 @@
       "ff": 4894.53,
       "pf": 141.87,
       "ef": 0,
-      "tvlBscBridgeUsdt": 257424.97,
+      "tvlBscBridgeUsdt": 252551.86,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4828,9 +4828,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 269724.1,
+      "tvlBridgeOnly": 264850.99,
       "tvlFireblocks": 500400,
-      "tvlTotal": 770124.1
+      "tvlTotal": 765250.99
     },
     {
       "d": "2026-05-17",
@@ -4843,7 +4843,7 @@
       "ff": 2787.97,
       "pf": 203.62,
       "ef": 0,
-      "tvlBscBridgeUsdt": 253663.35,
+      "tvlBscBridgeUsdt": 253181.66,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4851,9 +4851,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 265962.48,
+      "tvlBridgeOnly": 265480.79,
       "tvlFireblocks": 500400,
-      "tvlTotal": 766362.48
+      "tvlTotal": 765880.79
     },
     {
       "d": "2026-05-18",
@@ -4866,7 +4866,7 @@
       "ff": 4785.54,
       "pf": 298.74,
       "ef": 0,
-      "tvlBscBridgeUsdt": 251865.31,
+      "tvlBscBridgeUsdt": 253350.08,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4874,9 +4874,9 @@
       "tvlSolBridgeUsdc": 0,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 264164.44,
+      "tvlBridgeOnly": 265649.21,
       "tvlFireblocks": 500400,
-      "tvlTotal": 764564.44
+      "tvlTotal": 766049.21
     },
     {
       "d": "2026-05-19",
@@ -4889,7 +4889,7 @@
       "ff": 10185.13,
       "pf": 108.13,
       "ef": 0,
-      "tvlBscBridgeUsdt": 253847.49,
+      "tvlBscBridgeUsdt": 255778.52,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4897,9 +4897,9 @@
       "tvlSolBridgeUsdc": 29131.52,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 295278.14,
+      "tvlBridgeOnly": 297209.17,
       "tvlFireblocks": 500400,
-      "tvlTotal": 795678.14
+      "tvlTotal": 797609.17
     },
     {
       "d": "2026-05-20",
@@ -4912,17 +4912,17 @@
       "ff": 7315.63,
       "pf": 601.63,
       "ef": 0,
-      "tvlBscBridgeUsdt": 255594.46,
+      "tvlBscBridgeUsdt": 255557.53,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
-      "tvlSolBridgeUsdt": 112338.88,
+      "tvlSolBridgeUsdt": 0,
       "tvlSolBridgeUsdc": 29131.52,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 409363.99,
+      "tvlBridgeOnly": 296988.18,
       "tvlFireblocks": 500400,
-      "tvlTotal": 909763.99
+      "tvlTotal": 797388.18
     },
     {
       "d": "2026-05-21",
@@ -4935,7 +4935,7 @@
       "ff": 9694.88,
       "pf": 574.07,
       "ef": 0,
-      "tvlBscBridgeUsdt": 255206.79,
+      "tvlBscBridgeUsdt": 256358.9,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
@@ -4943,9 +4943,9 @@
       "tvlSolBridgeUsdc": 29131.52,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 409114.77,
+      "tvlBridgeOnly": 410266.88,
       "tvlFireblocks": 500400,
-      "tvlTotal": 909514.77
+      "tvlTotal": 910666.88
     },
     {
       "d": "2026-05-22",
@@ -4958,17 +4958,17 @@
       "ff": 8351.8,
       "pf": 73.83,
       "ef": 0,
-      "tvlBscBridgeUsdt": 251343.92,
+      "tvlBscBridgeUsdt": 251199.43,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
-      "tvlSolBridgeUsdt": 112477.33,
+      "tvlSolBridgeUsdt": 112347.78,
       "tvlSolBridgeUsdc": 29131.52,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 405251.9,
+      "tvlBridgeOnly": 404977.86,
       "tvlFireblocks": 500400,
-      "tvlTotal": 905651.9
+      "tvlTotal": 905377.86
     },
     {
       "d": "2026-05-23",
@@ -4981,17 +4981,17 @@
       "ff": 8986.58,
       "pf": 37.93,
       "ef": 0,
-      "tvlBscBridgeUsdt": 252592.09,
+      "tvlBscBridgeUsdt": 252893.61,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 500300,
       "tvlBscFireblocksUsdc": 100,
       "tvlSolBridgeUsdt": 115818.76,
-      "tvlSolBridgeUsdc": 29131.52,
+      "tvlSolBridgeUsdc": 29346.59,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 409841.5,
+      "tvlBridgeOnly": 410358.09,
       "tvlFireblocks": 500400,
-      "tvlTotal": 910241.5
+      "tvlTotal": 910758.09
     },
     {
       "d": "2026-05-24",
@@ -5004,7 +5004,7 @@
       "ff": 4688.03,
       "pf": 13.53,
       "ef": 0,
-      "tvlBscBridgeUsdt": 253196.85,
+      "tvlBscBridgeUsdt": 253202.33,
       "tvlBscBridgeUsdc": 12299.13,
       "tvlBscFireblocksUsdt": 660300,
       "tvlBscFireblocksUsdc": 100,
@@ -5012,21 +5012,21 @@
       "tvlSolBridgeUsdc": 29359.29,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 417888.22,
+      "tvlBridgeOnly": 417893.7,
       "tvlFireblocks": 660400,
-      "tvlTotal": 1078288.22
+      "tvlTotal": 1078293.7
     }
   ],
   "snapshot": {
     "bsc": {
-      "usdt": 250064.87,
+      "usdt": 253567.09,
       "usdc": 12299.13
     },
     "solana": {
-      "usdt": 122862.95,
+      "usdt": 123066.81,
       "usdc": 29359.29
     },
-    "subtotal": 414586.24,
+    "subtotal": 418292.32,
     "fireblocksPending": true
   }
 }

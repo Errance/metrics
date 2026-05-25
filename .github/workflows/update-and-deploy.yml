@@ -1,17 +1,27 @@
 name: Refresh data and deploy
 
+# Strategy:
+#   - The repo holds a `src/data/daily.json` "baseline" data pack covering
+#     every day from genesis up to the last successful refresh.
+#   - This workflow runs every day at 02:00 UTC (and on every push to `main`
+#     and on-demand) and performs an INCREMENTAL refresh: each fetcher reads
+#     the committed daily.json, then re-samples only the latest committed day
+#     onwards. This keeps the daily API/RPC footprint tiny so we don't get
+#     rate-limited and don't accidentally zero-out historical data.
+#   - The refreshed `src/data/daily.json` is committed back to `main` (skip-ci
+#     to avoid recursion), then the static site is built and deployed to
+#     GitHub Pages.
+
 on:
-  # Refresh at 01:00 UTC every day (09:00 Beijing).
-  schedule:
-    - cron: '0 1 * * *'
-  # Allow manual re-runs from the Actions tab.
   workflow_dispatch:
-  # Build & deploy on every push to main (e.g. UI changes).
+  schedule:
+    # 02:00 UTC daily — gives the metrics API time to settle yesterday's data.
+    - cron: '0 2 * * *'
   push:
     branches: [main]
 
 permissions:
-  contents: read
+  contents: write       # needed to commit refreshed daily.json
   pages: write
   id-token: write
 
@@ -20,11 +30,17 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  refresh-and-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          # Need full history so we can push back if data changed.
+          fetch-depth: 0
+          # Use default GITHUB_TOKEN; combined with permissions.contents=write
+          # above this is sufficient to push to the same repo.
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node
         uses: actions/setup-node@v5
@@ -35,14 +51,27 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Refresh data (fetch all + build-data)
+      # Incremental refresh — fast (~1 min) and rate-limit-safe.
+      # If we ever need to rebuild from scratch, manually run
+      # `FULL_REFRESH=1 npm run refresh` locally and commit the result.
+      - name: Refresh data (incremental)
         run: npm run refresh
-        env:
-          # Optional override: comma-separated list of Solana RPCs.
-          # Default uses mainnet-beta + publicnode.
-          SOLANA_RPCS: ${{ secrets.SOLANA_RPCS }}
-          # Optional override: single BSC RPC URL with deep history.
-          BSC_RPC: ${{ secrets.BSC_RPC }}
+
+      - name: Commit refreshed data
+        # Push to main only when daily.json actually changed AND this isn't
+        # already a push event (avoid recursion). schedule/workflow_dispatch
+        # are the normal triggers that commit.
+        if: github.event_name != 'push'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- src/data/daily.json; then
+            echo "No data changes — skipping commit."
+          else
+            git add src/data/daily.json
+            git commit -m "chore(data): refresh $(date -u +%Y-%m-%d) [skip ci]"
+            git push
+          fi
 
       - name: Build static site
         run: npm run build
@@ -55,7 +84,7 @@ jobs:
           path: ./dist
 
   deploy:
-    needs: build
+    needs: refresh-and-build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
