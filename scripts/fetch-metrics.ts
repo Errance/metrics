@@ -15,7 +15,9 @@ const OUT_FILE = join(CACHE_DIR, 'metrics.json');
 
 const GENESIS = process.env.GENESIS_DATE || '2025-10-19';
 const API_BASE =
-  process.env.JERRY_API_BASE || 'https://surfv2-uat-api.nfexinsider.com';
+  process.env.METRICS_API_BASE ||
+  process.env.JERRY_API_BASE ||
+  'https://api4.turboflow.xyz';
 
 type ApiRow = {
   errno: string;

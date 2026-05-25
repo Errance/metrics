@@ -21,7 +21,7 @@ https://errance.github.io/metrics/
 | Section | Source | Window |
 | --- | --- | --- |
 | **Bridge TVL** (BSC + Solana, USDT/USDC) | Backfilled from BSC `eth_call balanceOf` and Solana `getTransaction` postTokenBalances | Genesis (2025-10-19) → yesterday UTC |
-| **Daily volume** (perp + event) | Jerry's API `/defillama/metrics?date=YYYY-MM-DD` | last 180 days |
+| **Daily volume** (perp + event) | `api4.turboflow.xyz/defillama/metrics?date=YYYY-MM-DD` (production) | last 180 days |
 | **Fees & revenue** (flat fee, profit share, event fee) | same as above | last 180 days |
 | **Users** (total, DAU, new) | same as above | last 180 days |
 | **Tx count** | same as above | last 180 days |

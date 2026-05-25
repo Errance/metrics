@@ -119,20 +119,23 @@ async function main() {
 
   const last = daily.at(-1);
   if (last) {
-    const ours = last.tvlTotal;
+    // The live snapshot from bridge-info.turboflow.xyz only covers the bridge
+    // contracts (BSC + Solana on-chain). Fireblocks vaults aren't surfaced
+    // by that API, so we compare against `tvlBridgeOnly`, not `tvlTotal`.
+    const ours = last.tvlBridgeOnly;
     const live = snap.subtotal;
     const diff = Math.abs(ours - live);
     const tol = Math.max(live * 0.05, 1000);
     if (diff > tol) {
       console.warn(
-        `[build] WARN: today backfill total ($${ours.toLocaleString()}) vs live snapshot ($${live.toLocaleString()}) differs by $${diff.toLocaleString()} (>${(
+        `[build] WARN: bridge-only backfill ($${ours.toLocaleString()}) vs live bridge snapshot ($${live.toLocaleString()}) differs by $${diff.toLocaleString()} (>${(
           (tol / live) *
           100
         ).toFixed(1)}%)`,
       );
     } else {
       console.log(
-        `[build] OK: today backfill total $${ours.toLocaleString()} vs live $${live.toLocaleString()} (diff $${diff.toLocaleString()})`,
+        `[build] OK: bridge backfill $${ours.toLocaleString()} vs live $${live.toLocaleString()} (diff $${diff.toLocaleString()}); fireblocks adds $${last.tvlFireblocks.toLocaleString()} → grand total $${last.tvlTotal.toLocaleString()}`,
       );
     }
   }
