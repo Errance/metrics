@@ -75,7 +75,7 @@ export default function App() {
       <UsersChart daily={slice} />
       <TxChart daily={slice} />
 
-      <BridgeCustodyDetail snapshot={data.snapshot} />
+      <BridgeCustodyDetail snapshot={data.snapshot} latest={data.daily.at(-1)!} />
 
       <footer className="footer">
         <div>

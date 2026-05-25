@@ -1,8 +1,9 @@
-import type { Snapshot } from '../lib/types';
+import type { Day, Snapshot } from '../lib/types';
 import { fmtUsd } from '../lib/format';
 
 type Props = {
   snapshot: Snapshot;
+  latest: Day;
 };
 
 const BSC_BRIDGE = '0x145CD0d5C3dD0eF1405dCf1b4D2BCE7c611625dB';
@@ -15,17 +16,24 @@ const FIREBLOCKS_BSC_TFUSERS = '0x077Ab3f5D4372cA14c6AA417215Af3d91B55bAFc';
 // Solana Fireblocks vault SPL token accounts: pending confirmation from ops
 // (addresses provided so far do not resolve as SPL token accounts on chain).
 
-export function BridgeCustodyDetail({ snapshot }: Props) {
+export function BridgeCustodyDetail({ snapshot, latest }: Props) {
+  const bscFireblocksTotal = latest.tvlBscFireblocksUsdt + latest.tvlBscFireblocksUsdc;
+  const solFireblocksTotal = latest.tvlSolFireblocksUsdt + latest.tvlSolFireblocksUsdc;
+  const fireblocksTotal = bscFireblocksTotal + solFireblocksTotal;
+  const grandTotal = latest.tvlTotal;
+
   return (
     <section className="card">
       <header className="section-head" style={{ marginBottom: 14 }}>
         <div>
-          <h2 style={{ marginBottom: 4 }}>Bridge Custody (current snapshot)</h2>
+          <h2 style={{ marginBottom: 4 }}>Custody Detail (current)</h2>
           <div className="section-sub">
-            Live on-chain balances. Source:{' '}
+            On-chain bridge balances from{' '}
             <a href="https://bridge-info.turboflow.xyz/explorer/" target="_blank" rel="noreferrer">
               bridge-info.turboflow.xyz
-            </a>
+            </a>{' '}
+            + Fireblocks MPC vault balances from BSC RPC (read at last refresh{' '}
+            <span className="mono">{latest.d}</span>).
           </div>
         </div>
       </header>
@@ -115,44 +123,82 @@ export function BridgeCustodyDetail({ snapshot }: Props) {
       <div className="divider" />
 
       <div>
-        <h3 style={{ fontSize: 14, marginBottom: 8 }}>Fireblocks MPC custody (operating reserves)</h3>
-        <div className="kv">
-          <span className="kv-label">BSC vault — SIG (USDT/USDC)</span>
-          <a
-            className="kv-value mono"
-            href={`https://bscscan.com/address/${FIREBLOCKS_BSC_SIG}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {short(FIREBLOCKS_BSC_SIG)}
-          </a>
-        </div>
-        <div className="kv">
-          <span className="kv-label">BSC vault — TFUSERS (USDT/USDC)</span>
-          <a
-            className="kv-value mono"
-            href={`https://bscscan.com/address/${FIREBLOCKS_BSC_TFUSERS}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {short(FIREBLOCKS_BSC_TFUSERS)}
-          </a>
-        </div>
-        <div className="kv">
-          <span className="kv-label">Solana SPL vaults</span>
-          <span className="kv-value" style={{ color: 'var(--text-dim)' }}>
-            pending ops confirmation
-          </span>
+        <h3 style={{ fontSize: 14, marginBottom: 8 }}>
+          Fireblocks MPC custody (operating reserves)
+        </h3>
+        <div className="grid grid-2">
+          <div>
+            <div className="kv">
+              <span className="kv-label">BSC vault — SIG</span>
+              <a
+                className="kv-value mono"
+                href={`https://bscscan.com/address/${FIREBLOCKS_BSC_SIG}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {short(FIREBLOCKS_BSC_SIG)}
+              </a>
+            </div>
+            <div className="kv">
+              <span className="kv-label">BSC vault — TFUSERS</span>
+              <a
+                className="kv-value mono"
+                href={`https://bscscan.com/address/${FIREBLOCKS_BSC_TFUSERS}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {short(FIREBLOCKS_BSC_TFUSERS)}
+              </a>
+            </div>
+            <div className="kv">
+              <span className="kv-label">USDT (BSC, combined)</span>
+              <span className="kv-value">
+                {fmtUsd(latest.tvlBscFireblocksUsdt, { compact: false })}
+              </span>
+            </div>
+            <div className="kv">
+              <span className="kv-label">USDC (BSC, combined)</span>
+              <span className="kv-value">
+                {fmtUsd(latest.tvlBscFireblocksUsdc, { compact: false })}
+              </span>
+            </div>
+            <div className="kv">
+              <span className="kv-label">Subtotal (BSC vaults)</span>
+              <span className="kv-value" style={{ fontWeight: 600 }}>
+                {fmtUsd(bscFireblocksTotal, { compact: false })}
+              </span>
+            </div>
+          </div>
+          <div>
+            <div className="kv">
+              <span className="kv-label">Solana SPL vaults</span>
+              <span className="kv-value" style={{ color: 'var(--text-dim)' }}>
+                {solFireblocksTotal > 0
+                  ? fmtUsd(solFireblocksTotal, { compact: false })
+                  : 'pending on-chain init'}
+              </span>
+            </div>
+            <div className="kv">
+              <span className="kv-label">Subtotal (all Fireblocks)</span>
+              <span className="kv-value" style={{ fontWeight: 600 }}>
+                {fmtUsd(fireblocksTotal, { compact: false })}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="divider" />
 
-      <div className="row" style={{ justifyContent: 'space-between' }}>
+      <div className="row" style={{ justifyContent: 'space-between', alignItems: 'flex-end' }}>
         <div>
-          <div className="stat-label">Bridge subtotal (BSC + Solana on-chain)</div>
+          <div className="stat-label">Total custody (bridge contracts + Fireblocks)</div>
           <div className="stat-value" style={{ fontSize: 22 }}>
-            {fmtUsd(snapshot.subtotal, { compact: false })}
+            {fmtUsd(grandTotal, { compact: false })}
+          </div>
+          <div className="stat-label" style={{ marginTop: 4, fontSize: 11 }}>
+            = bridge {fmtUsd(latest.tvlBridgeOnly, { compact: false })} + Fireblocks{' '}
+            {fmtUsd(fireblocksTotal, { compact: false })}
           </div>
         </div>
         {snapshot.fireblocksPending ? (
