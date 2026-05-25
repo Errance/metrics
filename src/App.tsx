@@ -38,12 +38,17 @@ export default function App() {
         </div>
       </header>
 
-      <section className="grid grid-4">
+      <section className="grid grid-5">
         <StatCard label="Bridge TVL (current)" value={fmtUsd(lastDay?.tvlTotal ?? 0)} sub="BSC + Solana on-chain" />
         <StatCard
-          label={`Volume (${winLabel})`}
-          value={fmtUsd(sum(slice, 'pv') + sum(slice, 'ev'))}
-          sub="Perp + prediction"
+          label={`Perp volume (${winLabel})`}
+          value={fmtUsd(sum(slice, 'pv'))}
+          sub="Perp notional"
+        />
+        <StatCard
+          label={`Prediction volume (${winLabel})`}
+          value={fmtUsd(sum(slice, 'ev'))}
+          sub="Event contracts (settled)"
         />
         <StatCard
           label={`Fees (${winLabel})`}

@@ -12,6 +12,10 @@
   --accent-2: #5dd6ff;
   --good: #4fd1a3;
   --warn: #f5a623;
+  /* Perp = orange, prediction = magenta-purple — matches DefiLlama-style
+     dual-series chart treatment for "two non-comparable dimensions". */
+  --series-perp: #f59e3a;
+  --series-pred: #c560f5;
   --bad: #ef5b5b;
   --bsc-usdt: #f3ba2f;
   --bsc-usdc: #2775ca;
@@ -115,8 +119,21 @@ h2 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+@media (max-width: 1100px) {
+  .grid-5 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 880px) {
   .grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-5 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .grid-2 {
