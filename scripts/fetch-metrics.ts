@@ -29,7 +29,6 @@ const API_BASE =
   process.env.JERRY_API_BASE ||
   'https://apis.turboflow.xyz';
 const FULL_REFRESH = process.env.FULL_REFRESH === '1';
-let sawLegacyDailyRow = false;
 
 type ApiRow = {
   errno: string;
@@ -169,9 +168,6 @@ async function loadExisting(): Promise<Map<string, MetricRow>> {
     const m = new Map<string, MetricRow>();
     for (const r of bundle.daily ?? []) {
       if (!r.d) continue;
-      if (r.pmv == null || r.fv == null || r.tf == null || r.pr == null) {
-        sawLegacyDailyRow = true;
-      }
       const ev = r.ev ?? 0;
       const fv = r.fv ?? 0;
       const ff = r.ff ?? 0;
@@ -203,7 +199,7 @@ async function loadExisting(): Promise<Map<string, MetricRow>> {
 }
 
 function pickDatesToFetch(existing: Map<string, MetricRow>, until: string): string[] {
-  if (FULL_REFRESH || existing.size === 0 || sawLegacyDailyRow) {
+  if (FULL_REFRESH || existing.size === 0) {
     return eachDay(GENESIS, until);
   }
   // Find latest day with any signal (avoid getting stuck on a zero-padded row
@@ -224,7 +220,7 @@ async function main(): Promise<void> {
   const dates = pickDatesToFetch(existing, until);
   console.log(
     `[metrics] mode=${FULL_REFRESH ? 'FULL' : existing.size > 0 ? 'incremental' : 'first-run'} ` +
-      `existing=${existing.size} legacy=${sawLegacyDailyRow ? 'yes' : 'no'} fetch=${dates.length} (${dates[0]} ... ${dates[dates.length - 1]})`,
+      `existing=${existing.size} fetch=${dates.length} (${dates[0]} ... ${dates[dates.length - 1]})`,
   );
 
   // Sequential at concurrency=1 — production API rate-limits aggressive
