@@ -169,11 +169,12 @@ turboflow-metrics-dashboard/
 
 ## Open follow-ups
 
-- **Boss feedback (pending)**: split daily "Volume" and "Fees" stat cards/
-  charts into separate `Perp` and `Prediction (event contracts)` dimensions —
-  these aren't comparable units and shouldn't be summed in one figure. The
-  underlying `MetricRow.pv` (perp) and `MetricRow.ev` (event) are already
-  separate; only UI presentation needs to change.
-- This dashboard is **internal-only**. Public DefiLlama listing is handled by
-  the separate `defillama-submission/` PRs against `DefiLlama-Adapters` and
-  `DefiLlama/dimension-adapters`.
+- **DefiLlama metrics submission**: the dashboard now mirrors the intended
+  DefiLlama presentation: Perp Volume and Prediction Market Volume are separate,
+  while Fees / Revenue use aggregate protocol-level fields.
+- **Users / DAU**: shown here for transparency, but not expected to be submitted
+  as standard DefiLlama dimension-adapter fields unless maintainers request a
+  specific path.
+- This dashboard is a stakeholder preview. Public DefiLlama listing work is
+  handled by the separate `defillama-submission/` PRs against
+  `DefiLlama-Adapters` and `DefiLlama/dimension-adapters`.

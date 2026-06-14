@@ -16,9 +16,10 @@ const data = bundle as unknown as Bundle;
 
 export default function App() {
   const [win, setWin] = useState<Window>('180d');
-  const slice: Day[] = useMemo(() => sliceWindow(data.daily, win), [win]);
+  const normalizedDaily: Day[] = useMemo(() => data.daily.map(normalizeDay), []);
+  const slice: Day[] = useMemo(() => sliceWindow(normalizedDaily, win), [normalizedDaily, win]);
 
-  const lastDay = data.daily.at(-1);
+  const lastDay = normalizedDaily.at(-1);
 
   const winLabel =
     win === '30d' ? '30 days' : win === '90d' ? '90 days' : win === '180d' ? '180 days' : 'All time';
@@ -39,7 +40,11 @@ export default function App() {
       </header>
 
       <section className="grid grid-5">
-        <StatCard label="Bridge TVL (current)" value={fmtUsd(lastDay?.tvlTotal ?? 0)} sub="BSC + Solana on-chain" />
+        <StatCard
+          label="Custody total (current)"
+          value={fmtUsd(lastDay?.tvlTotal ?? 0)}
+          sub="Bridge + Fireblocks where available"
+        />
         <StatCard
           label={`Perp volume (${winLabel})`}
           value={fmtUsd(sum(slice, 'pv'))}
@@ -63,16 +68,12 @@ export default function App() {
         <WindowSelector value={win} onChange={setWin} />
       </div>
 
-      {data.snapshot.fireblocksPending ? (
-        <div className="disclaimer">
-          <strong>TVL caveat.</strong> Charts below display bridge custody only. TurboFlow uses a
-          hybrid custody model: user deposits arrive at on-chain bridges (BSC + Solana) and are then
-          transferred to institutional MPC wallets operated through Fireblocks. The Fireblocks
-          wallet list has not been publicly disclosed yet, so its balances are excluded from these
-          charts. Reported total TVL on DefiLlama will be higher than what is shown here once
-          Fireblocks custody is included.
-        </div>
-      ) : null}
+      <div className="disclaimer">
+        <strong>DefiLlama classification note.</strong> This dashboard separates bridge contract
+        custody and Fireblocks MPC custody for transparency. On DefiLlama, bridge balances are
+        expected under TVL, while Fireblocks MPC balances are expected under Treasury, so the custody
+        total shown here should not be read as a single TVL figure.
+      </div>
 
       <TVLChart daily={slice} />
       <VolumeChart daily={slice} />
@@ -80,13 +81,13 @@ export default function App() {
       <UsersChart daily={slice} />
       <TxChart daily={slice} />
 
-      <BridgeCustodyDetail snapshot={data.snapshot} latest={data.daily.at(-1)!} />
+      <BridgeCustodyDetail snapshot={data.snapshot} latest={lastDay!} />
 
       <footer className="footer">
         <div>
           Data sources:&nbsp;
           <a href="https://apis.turboflow.xyz/defillama/metrics" target="_blank" rel="noreferrer">
-            Jerry metrics API
+            TurboFlow metrics API
           </a>
           ,&nbsp;
           <a href="https://bridge-info.turboflow.xyz" target="_blank" rel="noreferrer">
@@ -101,4 +102,31 @@ export default function App() {
       </footer>
     </div>
   );
+}
+
+function normalizeDay(d: Day): Day {
+  const ev = num(d.ev);
+  const fv = num(d.fv);
+  const ff = num(d.ff);
+  const pf = num(d.pf);
+  const ef = num(d.ef);
+  const tf = num(d.tf) || ff + pf + ef;
+
+  return {
+    ...d,
+    ev,
+    fv,
+    pmv: num(d.pmv) || ev + fv,
+    ff,
+    pf,
+    ef,
+    tf,
+    pr: num(d.pr) || tf,
+    ssr: num(d.ssr),
+    hr: num(d.hr),
+  };
+}
+
+function num(value: unknown): number {
+  return typeof value === 'number' && Number.isFinite(value) ? value : 0;
 }
