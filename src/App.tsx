@@ -58,7 +58,7 @@ export default function App() {
         <StatCard
           label={`Fees (${winLabel})`}
           value={fmtUsd(sum(slice, 'tf'))}
-          sub="Aggregate protocol fees"
+          sub="Perp + prediction"
         />
         <StatCard label="Total wallets" value={fmtNum(lastDay?.u ?? 0)} sub="Cumulative" />
       </section>

@@ -41,7 +41,7 @@ https://errance.github.io/metrics/
 | --- | --- | --- |
 | **Bridge TVL** (BSC + Solana, USDT/USDC) | Backfilled from BSC `eth_call balanceOf` and Solana `getTransaction` postTokenBalances | Genesis (2025-10-19) → yesterday UTC |
 | **Daily volume** (perp + prediction market) | `apis.turboflow.xyz/defillama/metrics?date=YYYY-MM-DD` (production) | last 180 days |
-| **Fees & revenue** (aggregate protocol-level) | same as above | last 180 days |
+| **Fees & revenue** (perp + prediction) | same as above | last 180 days |
 | **Users** (total, DAU, new) | same as above | last 180 days |
 | **Tx count** | same as above | last 180 days |
 | **Bridge custody snapshot** (current) | `bridge-info.turboflow.xyz` | live |
@@ -171,7 +171,7 @@ turboflow-metrics-dashboard/
 
 - **DefiLlama metrics submission**: the dashboard now mirrors the intended
   DefiLlama presentation: Perp Volume and Prediction Market Volume are separate,
-  while Fees / Revenue use aggregate protocol-level fields.
+  while Fees / Revenue are split into Perp and Prediction product-line metrics.
 - **Users / DAU**: shown here for transparency, but not expected to be submitted
   as standard DefiLlama dimension-adapter fields unless maintainers request a
   specific path.
