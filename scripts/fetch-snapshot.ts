@@ -21,13 +21,15 @@ type ApiResp = {
     evm: {
       custody_balances: {
         symbol: string;
-        balance_human: string;
+        balance_human?: string;
+        error?: string;
       }[];
     };
     solana: {
       custody_balances: {
         symbol: string;
-        balance_human: string;
+        balance_human?: string;
+        error?: string;
       }[];
     };
   };
@@ -41,11 +43,13 @@ type SnapshotOut = {
 };
 
 function pick(
-  rows: { symbol: string; balance_human: string }[],
+  rows: { symbol: string; balance_human?: string; error?: string }[],
   symbol: string,
 ): number {
-  const m = rows.find((r) => r.symbol.toUpperCase() === symbol);
-  return m ? parseFloat(m.balance_human) : 0;
+  const m = rows.find((r) => r.symbol.toUpperCase() === symbol && r.balance_human != null);
+  if (!m?.balance_human) return 0;
+  const n = parseFloat(m.balance_human);
+  return Number.isFinite(n) ? n : 0;
 }
 
 async function main() {
