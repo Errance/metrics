@@ -17,6 +17,10 @@ const FIREBLOCKS_BSC_TFUSERS = '0x077Ab3f5D4372cA14c6AA417215Af3d91B55bAFc';
 // (addresses provided so far do not resolve as SPL token accounts on chain).
 
 export function BridgeCustodyDetail({ snapshot, latest }: Props) {
+  const bscBridgeUsdt = snapshot.bsc.usdt || latest.tvlBscBridgeUsdt;
+  const bscBridgeUsdc = snapshot.bsc.usdc || latest.tvlBscBridgeUsdc;
+  const solBridgeUsdt = snapshot.solana.usdt || latest.tvlSolBridgeUsdt;
+  const solBridgeUsdc = snapshot.solana.usdc || latest.tvlSolBridgeUsdc;
   const bscFireblocksTotal = latest.tvlBscFireblocksUsdt + latest.tvlBscFireblocksUsdc;
   const solFireblocksTotal = latest.tvlSolFireblocksUsdt + latest.tvlSolFireblocksUsdc;
   const fireblocksTotal = bscFireblocksTotal + solFireblocksTotal;
@@ -54,16 +58,16 @@ export function BridgeCustodyDetail({ snapshot, latest }: Props) {
           </div>
           <div className="kv">
             <span className="kv-label">USDT</span>
-            <span className="kv-value">{fmtUsd(snapshot.bsc.usdt, { compact: false })}</span>
+            <span className="kv-value">{fmtUsd(bscBridgeUsdt, { compact: false })}</span>
           </div>
           <div className="kv">
             <span className="kv-label">USDC</span>
-            <span className="kv-value">{fmtUsd(snapshot.bsc.usdc, { compact: false })}</span>
+            <span className="kv-value">{fmtUsd(bscBridgeUsdc, { compact: false })}</span>
           </div>
           <div className="kv">
             <span className="kv-label">Subtotal</span>
             <span className="kv-value" style={{ fontWeight: 600 }}>
-              {fmtUsd(snapshot.bsc.usdt + snapshot.bsc.usdc, { compact: false })}
+              {fmtUsd(bscBridgeUsdt + bscBridgeUsdc, { compact: false })}
             </span>
           </div>
         </div>
@@ -105,16 +109,16 @@ export function BridgeCustodyDetail({ snapshot, latest }: Props) {
           </div>
           <div className="kv">
             <span className="kv-label">USDT</span>
-            <span className="kv-value">{fmtUsd(snapshot.solana.usdt, { compact: false })}</span>
+            <span className="kv-value">{fmtUsd(solBridgeUsdt, { compact: false })}</span>
           </div>
           <div className="kv">
             <span className="kv-label">USDC</span>
-            <span className="kv-value">{fmtUsd(snapshot.solana.usdc, { compact: false })}</span>
+            <span className="kv-value">{fmtUsd(solBridgeUsdc, { compact: false })}</span>
           </div>
           <div className="kv">
             <span className="kv-label">Subtotal</span>
             <span className="kv-value" style={{ fontWeight: 600 }}>
-              {fmtUsd(snapshot.solana.usdt + snapshot.solana.usdc, { compact: false })}
+              {fmtUsd(solBridgeUsdt + solBridgeUsdc, { compact: false })}
             </span>
           </div>
         </div>
