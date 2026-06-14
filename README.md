@@ -40,8 +40,8 @@ https://errance.github.io/metrics/
 | Section | Source | Window |
 | --- | --- | --- |
 | **Bridge TVL** (BSC + Solana, USDT/USDC) | Backfilled from BSC `eth_call balanceOf` and Solana `getTransaction` postTokenBalances | Genesis (2025-10-19) → yesterday UTC |
-| **Daily volume** (perp + event) | `api4.turboflow.xyz/defillama/metrics?date=YYYY-MM-DD` (production) | last 180 days |
-| **Fees & revenue** (flat fee, profit share, event fee) | same as above | last 180 days |
+| **Daily volume** (perp + prediction market) | `apis.turboflow.xyz/defillama/metrics?date=YYYY-MM-DD` (production) | last 180 days |
+| **Fees & revenue** (aggregate protocol-level) | same as above | last 180 days |
 | **Users** (total, DAU, new) | same as above | last 180 days |
 | **Tx count** | same as above | last 180 days |
 | **Bridge custody snapshot** (current) | `bridge-info.turboflow.xyz` | live |
@@ -89,7 +89,7 @@ npm run build:data          # local merge, no network
 | `GENESIS_DATE` | `2025-10-19` | Earliest day to backfill (only used on first run / FULL_REFRESH) |
 | `FULL_REFRESH` | unset | When `=1`, forces every fetcher to re-sample from genesis |
 | `BSC_RPC` | `https://bsc-mainnet.public.blastapi.io` | Must support `eth_call` at arbitrary historical blocks |
-| `METRICS_API_BASE` | `https://api4.turboflow.xyz` | Production metrics API |
+| `METRICS_API_BASE` | `https://apis.turboflow.xyz` | Production metrics API |
 | `SOLANA_RPCS` | `https://api.mainnet-beta.solana.com,https://solana-rpc.publicnode.com` | Comma-separated. First endpoint is used for signature pagination (needs deep history); all endpoints are round-robined for `getTransaction` |
 | `SOL_CONCURRENCY` | `10` | Per-holder worker count for `getTransaction` |
 

@@ -28,9 +28,15 @@ type MetricRow = {
   tx: number;
   pv: number;
   ev: number;
+  fv: number;
+  pmv: number;
   ff: number;
   pf: number;
   ef: number;
+  tf: number;
+  pr: number;
+  ssr: number;
+  hr: number;
 };
 
 type TvlChainRow = {
@@ -100,9 +106,15 @@ async function main() {
       tx: m.tx,
       pv: round(m.pv),
       ev: round(m.ev),
+      fv: round(m.fv),
+      pmv: round(m.pmv),
       ff: round(m.ff),
       pf: round(m.pf),
       ef: round(m.ef),
+      tf: round(m.tf),
+      pr: round(m.pr),
+      ssr: round(m.ssr),
+      hr: round(m.hr),
       tvlBscBridgeUsdt: round(bsc.bridgeUsdt ?? bsc.usdt),
       tvlBscBridgeUsdc: round(bsc.bridgeUsdc ?? bsc.usdc),
       tvlBscFireblocksUsdt: round(bsc.fireblocksUsdt ?? 0),

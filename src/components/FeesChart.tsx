@@ -18,39 +18,35 @@ export function FeesChart({ daily }: Props) {
   const data = daily.map((d) => ({
     d: fmtDateShort(d.d),
     full: d.d,
-    flat: Math.round(d.ff * 100) / 100,
-    profit: Math.round(d.pf * 100) / 100,
-    event: Math.round(d.ef * 100) / 100,
+    fees: Math.round(d.tf * 100) / 100,
+    revenue: Math.round(d.pr * 100) / 100,
   }));
-  const sumFlat = daily.reduce((s, d) => s + d.ff, 0);
-  const sumProfit = daily.reduce((s, d) => s + d.pf, 0);
-  const sumEvent = daily.reduce((s, d) => s + d.ef, 0);
+  const sumFees = daily.reduce((s, d) => s + d.tf, 0);
+  const sumRevenue = daily.reduce((s, d) => s + d.pr, 0);
+  const sumSupplySide = daily.reduce((s, d) => s + d.ssr, 0);
+  const sumHolders = daily.reduce((s, d) => s + d.hr, 0);
   return (
     <ChartShell
       title="Fees & Revenue"
-      subtitle="Flat fee + profit share + event-contract fee"
+      subtitle="Aggregate protocol-level fees and revenue."
       totals={[
-        { label: 'Flat', value: fmtUsd(sumFlat) },
-        { label: 'Profit share', value: fmtUsd(sumProfit) },
-        { label: 'Event', value: fmtUsd(sumEvent) },
-        { label: 'Total', value: fmtUsd(sumFlat + sumProfit + sumEvent) },
+        { label: 'Fees', value: fmtUsd(sumFees) },
+        { label: 'Revenue', value: fmtUsd(sumRevenue) },
+        { label: 'Supply-side', value: fmtUsd(sumSupplySide) },
+        { label: 'Holders', value: fmtUsd(sumHolders) },
       ]}
     >
       <div style={{ width: '100%', height: 260 }}>
         <ResponsiveContainer>
           <AreaChart data={data} margin={{ top: 8, right: 12, bottom: 4, left: 4 }}>
             <defs>
-              <linearGradient id="gradFlat" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="gradFees" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="var(--accent)" stopOpacity={0.45} />
                 <stop offset="95%" stopColor="var(--accent)" stopOpacity={0} />
               </linearGradient>
-              <linearGradient id="gradProfit" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="gradRevenue" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="var(--good)" stopOpacity={0.45} />
                 <stop offset="95%" stopColor="var(--good)" stopOpacity={0} />
-              </linearGradient>
-              <linearGradient id="gradEvent" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="var(--accent-2)" stopOpacity={0.45} />
-                <stop offset="95%" stopColor="var(--accent-2)" stopOpacity={0} />
               </linearGradient>
             </defs>
             <CartesianGrid stroke="var(--border)" vertical={false} />
@@ -71,27 +67,17 @@ export function FeesChart({ daily }: Props) {
             <Legend wrapperStyle={{ fontSize: 12 }} />
             <Area
               type="monotone"
-              dataKey="flat"
-              name="Flat fee"
-              stackId="f"
+              dataKey="fees"
+              name="Fees"
               stroke="var(--accent)"
-              fill="url(#gradFlat)"
+              fill="url(#gradFees)"
             />
             <Area
               type="monotone"
-              dataKey="profit"
-              name="Profit share"
-              stackId="f"
+              dataKey="revenue"
+              name="Revenue"
               stroke="var(--good)"
-              fill="url(#gradProfit)"
-            />
-            <Area
-              type="monotone"
-              dataKey="event"
-              name="Event fee"
-              stackId="f"
-              stroke="var(--accent-2)"
-              fill="url(#gradEvent)"
+              fill="url(#gradRevenue)"
             />
           </AreaChart>
         </ResponsiveContainer>

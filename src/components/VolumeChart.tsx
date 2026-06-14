@@ -19,7 +19,7 @@ const COLOR_PRED = 'var(--series-pred)';
 
 /**
  * DefiLlama-style dual-axis overlapping bars. Perp uses the LEFT y-axis,
- * Prediction (event contracts) uses the RIGHT y-axis. They are NOT summed —
+ * Prediction Market uses the RIGHT y-axis. They are NOT summed —
  * each occupies the same x-position with two thin bars overlaid, so it's
  * visually obvious that they're two independent dimensions of the business.
  */
@@ -28,10 +28,14 @@ export function VolumeChart({ daily }: Props) {
     d: fmtDateShort(d.d),
     full: d.d,
     perp: Math.round(d.pv * 100) / 100,
-    pred: Math.round(d.ev * 100) / 100,
+    pred: Math.round(d.pmv * 100) / 100,
+    event: Math.round(d.ev * 100) / 100,
+    football: Math.round(d.fv * 100) / 100,
   }));
   const sumPerp = daily.reduce((s, d) => s + d.pv, 0);
-  const sumPred = daily.reduce((s, d) => s + d.ev, 0);
+  const sumPred = daily.reduce((s, d) => s + d.pmv, 0);
+  const sumEvent = daily.reduce((s, d) => s + d.ev, 0);
+  const sumFootball = daily.reduce((s, d) => s + d.fv, 0);
   return (
     <ChartShell
       title="Daily Volume"
@@ -39,6 +43,8 @@ export function VolumeChart({ daily }: Props) {
       totals={[
         { label: 'Perp total', value: fmtUsd(sumPerp) },
         { label: 'Prediction total', value: fmtUsd(sumPred) },
+        { label: 'Event contracts', value: fmtUsd(sumEvent) },
+        { label: 'Football', value: fmtUsd(sumFootball) },
       ]}
     >
       <div style={{ width: '100%', height: 280 }}>

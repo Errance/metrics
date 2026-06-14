@@ -6,9 +6,15 @@ export type Day = {
   tx: number;
   pv: number;
   ev: number;
+  fv: number;
+  pmv: number;
   ff: number;
   pf: number;
   ef: number;
+  tf: number;
+  pr: number;
+  ssr: number;
+  hr: number;
   tvlBscBridgeUsdt: number;
   tvlBscBridgeUsdc: number;
   tvlBscFireblocksUsdt: number;

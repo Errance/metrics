@@ -47,13 +47,13 @@ export default function App() {
         />
         <StatCard
           label={`Prediction volume (${winLabel})`}
-          value={fmtUsd(sum(slice, 'ev'))}
-          sub="Event contracts (settled)"
+          value={fmtUsd(sum(slice, 'pmv'))}
+          sub="Event contracts + football"
         />
         <StatCard
           label={`Fees (${winLabel})`}
-          value={fmtUsd(sum(slice, 'ff') + sum(slice, 'pf') + sum(slice, 'ef'))}
-          sub="Flat + profit + event"
+          value={fmtUsd(sum(slice, 'tf'))}
+          sub="Aggregate protocol fees"
         />
         <StatCard label="Total wallets" value={fmtNum(lastDay?.u ?? 0)} sub="Cumulative" />
       </section>
@@ -85,7 +85,7 @@ export default function App() {
       <footer className="footer">
         <div>
           Data sources:&nbsp;
-          <a href="https://surfv2-uat-api.nfexinsider.com/defillama/metrics" target="_blank" rel="noreferrer">
+          <a href="https://apis.turboflow.xyz/defillama/metrics" target="_blank" rel="noreferrer">
             Jerry metrics API
           </a>
           ,&nbsp;

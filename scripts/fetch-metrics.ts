@@ -27,8 +27,9 @@ const GENESIS = process.env.GENESIS_DATE || '2025-10-19';
 const API_BASE =
   process.env.METRICS_API_BASE ||
   process.env.JERRY_API_BASE ||
-  'https://api4.turboflow.xyz';
+  'https://apis.turboflow.xyz';
 const FULL_REFRESH = process.env.FULL_REFRESH === '1';
+let sawLegacyDailyRow = false;
 
 type ApiRow = {
   errno: string;
@@ -44,6 +45,8 @@ type ApiRow = {
     volume: {
       perpVolumeUsd: string;
       eventContractsVolumeUsd: string;
+      footballVolumeUsd?: string;
+      predictionMarketVolumeUsd?: string;
       totalVolumeUsd: string;
     };
     fees: {
@@ -69,9 +72,15 @@ export type MetricRow = {
   tx: number;
   pv: number;
   ev: number;
+  fv: number;
+  pmv: number;
   ff: number;
   pf: number;
   ef: number;
+  tf: number;
+  pr: number;
+  ssr: number;
+  hr: number;
 };
 
 function toNum(s: string | number | undefined | null): number {
@@ -113,6 +122,10 @@ async function fetchDay(date: string): Promise<MetricRow> {
       const j = (await res.json()) as ApiRow;
       if (j.errno !== '200') throw new Error(`api errno=${j.errno} msg=${j.msg}`);
       const dd = j.data;
+      const eventVolume = toNum(dd.volume.eventContractsVolumeUsd);
+      const footballVolume = toNum(dd.volume.footballVolumeUsd);
+      const predictionMarketVolume =
+        toNum(dd.volume.predictionMarketVolumeUsd) || eventVolume + footballVolume;
       return {
         d: dd.date,
         u: toNum(dd.users.totalUsers),
@@ -120,10 +133,16 @@ async function fetchDay(date: string): Promise<MetricRow> {
         nu: toNum(dd.users.dailyNewUsers),
         tx: toNum(dd.users.dailyTransactionsCount),
         pv: toNum(dd.volume.perpVolumeUsd),
-        ev: toNum(dd.volume.eventContractsVolumeUsd),
+        ev: eventVolume,
+        fv: footballVolume,
+        pmv: predictionMarketVolume,
         ff: toNum(dd.fees.flatFeesUsd),
         pf: toNum(dd.fees.profitShareFeesUsd),
         ef: toNum(dd.fees.eventContractsFeesUsd),
+        tf: toNum(dd.fees.totalFeesUsd),
+        pr: toNum(dd.revenue.protocolRevenueUsd),
+        ssr: toNum(dd.revenue.rebatesUsd) + toNum(dd.revenue.lpVaultShareUsd),
+        hr: toNum(dd.revenue.tokenHolderRevenueUsd),
       };
     } catch (err) {
       lastErr = err;
@@ -140,7 +159,7 @@ async function fetchDay(date: string): Promise<MetricRow> {
 }
 
 type DailyBundle = {
-  daily?: { d: string; u: number; dau: number; nu: number; tx: number; pv: number; ev: number; ff: number; pf: number; ef: number }[];
+  daily?: Partial<MetricRow>[];
 };
 
 async function loadExisting(): Promise<Map<string, MetricRow>> {
@@ -149,7 +168,33 @@ async function loadExisting(): Promise<Map<string, MetricRow>> {
     const bundle = JSON.parse(buf) as DailyBundle;
     const m = new Map<string, MetricRow>();
     for (const r of bundle.daily ?? []) {
-      m.set(r.d, { d: r.d, u: r.u, dau: r.dau, nu: r.nu, tx: r.tx, pv: r.pv, ev: r.ev, ff: r.ff, pf: r.pf, ef: r.ef });
+      if (!r.d) continue;
+      if (r.pmv == null || r.fv == null || r.tf == null || r.pr == null) {
+        sawLegacyDailyRow = true;
+      }
+      const ev = r.ev ?? 0;
+      const fv = r.fv ?? 0;
+      const ff = r.ff ?? 0;
+      const pf = r.pf ?? 0;
+      const ef = r.ef ?? 0;
+      m.set(r.d, {
+        d: r.d,
+        u: r.u ?? 0,
+        dau: r.dau ?? 0,
+        nu: r.nu ?? 0,
+        tx: r.tx ?? 0,
+        pv: r.pv ?? 0,
+        ev,
+        fv,
+        pmv: r.pmv ?? ev + fv,
+        ff,
+        pf,
+        ef,
+        tf: r.tf ?? ff + pf + ef,
+        pr: r.pr ?? r.tf ?? ff + pf + ef,
+        ssr: r.ssr ?? 0,
+        hr: r.hr ?? 0,
+      });
     }
     return m;
   } catch {
@@ -158,14 +203,14 @@ async function loadExisting(): Promise<Map<string, MetricRow>> {
 }
 
 function pickDatesToFetch(existing: Map<string, MetricRow>, until: string): string[] {
-  if (FULL_REFRESH || existing.size === 0) {
+  if (FULL_REFRESH || existing.size === 0 || sawLegacyDailyRow) {
     return eachDay(GENESIS, until);
   }
   // Find latest day with any signal (avoid getting stuck on a zero-padded row
   // from an old failed run — re-fetch from the latest *non-zero* day).
   let latest = GENESIS;
   for (const r of existing.values()) {
-    const hasSignal = r.u > 0 || r.tx > 0 || r.pv > 0 || r.ev > 0;
+    const hasSignal = r.u > 0 || r.tx > 0 || r.pv > 0 || r.pmv > 0;
     if (hasSignal && r.d > latest) latest = r.d;
   }
   // Re-fetch [latest, until] — the overlap of `latest` itself is intentional:
@@ -179,7 +224,7 @@ async function main(): Promise<void> {
   const dates = pickDatesToFetch(existing, until);
   console.log(
     `[metrics] mode=${FULL_REFRESH ? 'FULL' : existing.size > 0 ? 'incremental' : 'first-run'} ` +
-      `existing=${existing.size} fetch=${dates.length} (${dates[0]} ... ${dates[dates.length - 1]})`,
+      `existing=${existing.size} legacy=${sawLegacyDailyRow ? 'yes' : 'no'} fetch=${dates.length} (${dates[0]} ... ${dates[dates.length - 1]})`,
   );
 
   // Sequential at concurrency=1 — production API rate-limits aggressive
@@ -192,7 +237,9 @@ async function main(): Promise<void> {
     existing.set(date, row);
     succeeded++;
     if (idx % 20 === 0 || idx === dates.length - 1) {
-      process.stderr.write(`[metrics] ${idx + 1}/${dates.length} ${date} u=${row.u} pv=$${Math.round(row.pv).toLocaleString()}\n`);
+      process.stderr.write(
+        `[metrics] ${idx + 1}/${dates.length} ${date} u=${row.u} pv=$${Math.round(row.pv).toLocaleString()} pmv=$${Math.round(row.pmv).toLocaleString()}\n`,
+      );
     }
   }
 
