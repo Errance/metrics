@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-27T03:04:24.146Z",
+  "asOf": "2026-06-28T03:05:40.351Z",
   "genesis": "2025-10-19",
   "daily": [
     {
@@ -7269,17 +7269,46 @@
       "pr": 10855.65,
       "ssr": 0,
       "hr": 0,
-      "tvlBscBridgeUsdt": 413718.71,
-      "tvlBscBridgeUsdc": 15159.91,
+      "tvlBscBridgeUsdt": 424455.14,
+      "tvlBscBridgeUsdc": 15088.73,
       "tvlBscFireblocksUsdt": 1223562,
       "tvlBscFireblocksUsdc": 100,
       "tvlSolBridgeUsdt": 324599.69,
       "tvlSolBridgeUsdc": 37135.91,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 790614.22,
+      "tvlBridgeOnly": 801279.47,
       "tvlFireblocks": 1223662,
-      "tvlTotal": 2014276.22
+      "tvlTotal": 2024941.47
+    },
+    {
+      "d": "2026-06-27",
+      "u": 17505,
+      "dau": 647,
+      "nu": 148,
+      "tx": 23078,
+      "pv": 26069780.03,
+      "ev": 350913.99,
+      "fv": 57714.15,
+      "pmv": 408628.14,
+      "ff": 8033.7,
+      "pf": 189.42,
+      "ef": 4939.58,
+      "tf": 13162.7,
+      "pr": 13162.7,
+      "ssr": 0,
+      "hr": 0,
+      "tvlBscBridgeUsdt": 425742.31,
+      "tvlBscBridgeUsdc": 15088.73,
+      "tvlBscFireblocksUsdt": 1223562,
+      "tvlBscFireblocksUsdc": 100,
+      "tvlSolBridgeUsdt": 327949.65,
+      "tvlSolBridgeUsdc": 37432.94,
+      "tvlSolFireblocksUsdt": 0,
+      "tvlSolFireblocksUsdc": 0,
+      "tvlBridgeOnly": 806213.63,
+      "tvlFireblocks": 1223662,
+      "tvlTotal": 2029875.63
     }
   ],
   "snapshot": {
@@ -7288,10 +7317,10 @@
       "usdc": 0
     },
     "solana": {
-      "usdt": 325357.79,
-      "usdc": 37135.91
+      "usdt": 327424.9,
+      "usdc": 37512.94
     },
-    "subtotal": 362493.7,
+    "subtotal": 364937.84,
     "fireblocksPending": true
   }
 }
