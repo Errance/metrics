@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-04T05:39:30.097Z",
+  "asOf": "2026-07-05T05:57:47.091Z",
   "genesis": "2025-10-19",
   "daily": [
     {
@@ -7460,11 +7460,11 @@
       "u": 18112,
       "dau": 709,
       "nu": 63,
-      "tx": 26912,
+      "tx": 26381,
       "pv": 31494837.5,
       "ev": 412004.58,
-      "fv": 29109.77,
-      "pmv": 441114.35,
+      "fv": 16390.93,
+      "pmv": 428395.51,
       "ff": 1166.07,
       "pf": 893.89,
       "ef": 5734.57,
@@ -7472,17 +7472,46 @@
       "pr": 7794.53,
       "ssr": 0,
       "hr": 0,
-      "tvlBscBridgeUsdt": 320920.56,
-      "tvlBscBridgeUsdc": 16813.22,
+      "tvlBscBridgeUsdt": 323038.08,
+      "tvlBscBridgeUsdc": 16636.22,
       "tvlBscFireblocksUsdt": 2923662,
       "tvlBscFireblocksUsdc": 100,
       "tvlSolBridgeUsdt": 331050.19,
       "tvlSolBridgeUsdc": 40539.34,
       "tvlSolFireblocksUsdt": 0,
       "tvlSolFireblocksUsdc": 0,
-      "tvlBridgeOnly": 709323.31,
+      "tvlBridgeOnly": 711263.83,
       "tvlFireblocks": 2923762,
-      "tvlTotal": 3633085.31
+      "tvlTotal": 3635025.83
+    },
+    {
+      "d": "2026-07-04",
+      "u": 18194,
+      "dau": 680,
+      "nu": 82,
+      "tx": 24455,
+      "pv": 28674402.64,
+      "ev": 309304.82,
+      "fv": 14836.33,
+      "pmv": 324141.16,
+      "ff": 2098.92,
+      "pf": 700.09,
+      "ef": 3666.25,
+      "tf": 6465.26,
+      "pr": 6465.26,
+      "ssr": 0,
+      "hr": 0,
+      "tvlBscBridgeUsdt": 319175.06,
+      "tvlBscBridgeUsdc": 16559.24,
+      "tvlBscFireblocksUsdt": 2923662,
+      "tvlBscFireblocksUsdc": 100,
+      "tvlSolBridgeUsdt": 336151.12,
+      "tvlSolBridgeUsdc": 41171.97,
+      "tvlSolFireblocksUsdt": 0,
+      "tvlSolFireblocksUsdc": 0,
+      "tvlBridgeOnly": 713057.39,
+      "tvlFireblocks": 2923762,
+      "tvlTotal": 3636819.39
     }
   ],
   "snapshot": {
@@ -7491,10 +7520,10 @@
       "usdc": 0
     },
     "solana": {
-      "usdt": 330989.48,
-      "usdc": 41091.39
+      "usdt": 335269.67,
+      "usdc": 41171.97
     },
-    "subtotal": 372080.88,
+    "subtotal": 376441.64,
     "fireblocksPending": true
   }
 }
